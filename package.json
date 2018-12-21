@@ -1,0 +1,30 @@
+{
+  "name": "pizzastore",
+  "version": "1.0.0",
+  "description": "Store to order delicious pizzas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandregme/pizzastore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandregme/pizzastore/issues"
+  },
+  "homepage": "https://github.com/alexandregme/pizzastore#readme",
+  "dependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-test-renderer": "^16.7.0"
+  }
+}
