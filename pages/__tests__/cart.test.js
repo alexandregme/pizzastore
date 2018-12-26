@@ -1,22 +1,22 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import expect from 'expect';
-import Index from '../index';
+import Cart from '../cart';
 import Layout from '../../components/layout';
 
-describe("Index page", ()=>{
-    let mountedIndex;
+describe("Cart page", ()=>{
+    let mountedCart;
 
     beforeEach(()=>{
-        mountedIndex = shallow(<Index />);
+        mountedCart = shallow(<Cart />);
     });
 
     it('renders without crashing', () => {
-        shallow(<Index />);
-        expect(mountedIndex).toMatchSnapshot();
+        shallow(<Cart />);
+        expect(mountedCart).toMatchSnapshot();
     });
 
     it('expect to have Layout component', () => {
-        expect(mountedIndex.find(Layout)).toHaveLength(1);
+        expect(mountedCart.find(Layout)).toHaveLength(1);
     });
 });

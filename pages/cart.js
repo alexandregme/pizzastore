@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Layout from '../components/layout';
 
-class Index extends Component {
+class Cart extends Component {
     render() {
         return (
-            <Layout title='Home Page'>
-                <p>Home Page</p>
+            <Layout title='Cart Page'>
+                <p>Cart Page</p>
             </Layout>
         );
     }
 }
 
-export default Index;
+export default Cart;
