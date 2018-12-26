@@ -3,7 +3,7 @@ import {shallow} from 'enzyme';
 import expect from 'expect';
 import Head from '../head';
 
-describe("CustomHead", ()=>{
+describe("Head", ()=>{
     let mountedHead;
 
     beforeEach(()=>{

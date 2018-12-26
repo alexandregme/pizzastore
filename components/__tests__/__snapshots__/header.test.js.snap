@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Head renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <header>
+        <nav>
+          <Link
+            href="/"
+          >
+            <a>
+              Home
+            </a>
+          </Link>
+          <Link
+            href="/cart"
+          >
+            <a>
+              Cart
+            </a>
+          </Link>
+        </nav>
+      </header>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <nav>
+          <Link
+            href="/"
+          >
+            <a>
+              Home
+            </a>
+          </Link>
+          <Link
+            href="/cart"
+          >
+            <a>
+              Cart
+            </a>
+          </Link>
+        </nav>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              href="/"
+            >
+              <a>
+                Home
+              </a>
+            </Link>,
+            <Link
+              href="/cart"
+            >
+              <a>
+                Cart
+              </a>
+            </Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "/0",
+            "nodeType": "class",
+            "props": Object {
+              "children": <a>
+                Home
+              </a>,
+              "href": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Home",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": "a",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "/cart1",
+            "nodeType": "class",
+            "props": Object {
+              "children": <a>
+                Cart
+              </a>,
+              "href": "/cart",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cart",
+              },
+              "ref": null,
+              "rendered": "Cart",
+              "type": "a",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "nav",
+      },
+      "type": "header",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <header>
+          <nav>
+            <Link
+              href="/"
+            >
+              <a>
+                Home
+              </a>
+            </Link>
+            <Link
+              href="/cart"
+            >
+              <a>
+                Cart
+              </a>
+            </Link>
+          </nav>
+        </header>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <nav>
+            <Link
+              href="/"
+            >
+              <a>
+                Home
+              </a>
+            </Link>
+            <Link
+              href="/cart"
+            >
+              <a>
+                Cart
+              </a>
+            </Link>
+          </nav>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Link
+                href="/"
+              >
+                <a>
+                  Home
+                </a>
+              </Link>,
+              <Link
+                href="/cart"
+              >
+                <a>
+                  Cart
+                </a>
+              </Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "/0",
+              "nodeType": "class",
+              "props": Object {
+                "children": <a>
+                  Home
+                </a>,
+                "href": "/",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Home",
+                },
+                "ref": null,
+                "rendered": "Home",
+                "type": "a",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "/cart1",
+              "nodeType": "class",
+              "props": Object {
+                "children": <a>
+                  Cart
+                </a>,
+                "href": "/cart",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Cart",
+                },
+                "ref": null,
+                "rendered": "Cart",
+                "type": "a",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "nav",
+        },
+        "type": "header",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

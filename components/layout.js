@@ -1,10 +1,11 @@
 import React from 'react';
-import CustomHead from "./head";
+import Head from "./head";
+import Header from "./header";
 
 const Layout = () => (
     <React.Fragment>
-        <CustomHead/>
+        <Head/>
+        <Header/>
     </React.Fragment>
 );
-
 export default Layout;
