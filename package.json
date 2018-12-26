@@ -9,7 +9,9 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
     "test": "jest",
-    "test:watch": "jest --watch --coverage --no-cache"
+    "test:watch": "jest --watch --coverage --no-cache",
+    "lint": "eslint ./components ./pages",
+    "lint:watch": "watch 'npm run lint' ./components ./pages"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,9 @@
     "chai": "^4.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.11.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
     "next": "^7.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
