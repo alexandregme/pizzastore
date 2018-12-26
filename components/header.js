@@ -16,10 +16,14 @@ const Header = () => (
         <header>
             <nav>
                 {LINKS.map((link,i)=>
-                    <Link key={link.path+i}
-                        href={link.path}>
+                  (
+                    <Link
+                      key={link.path+i}
+                      href={link.path}
+                    >
                         <a>{link.name}</a>
                     </Link>
+                  )
                 )}
             </nav>
         </header>
