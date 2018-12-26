@@ -20,6 +20,7 @@ ShallowWrapper {
       "children": Array [
         <Head />,
         <Header />,
+        undefined,
       ],
     },
     "ref": null,
@@ -42,6 +43,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      undefined,
     ],
     "type": Symbol(react.fragment),
   },
@@ -54,6 +56,7 @@ ShallowWrapper {
         "children": Array [
           <Head />,
           <Header />,
+          undefined,
         ],
       },
       "ref": null,
@@ -76,6 +79,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        undefined,
       ],
       "type": Symbol(react.fragment),
     },

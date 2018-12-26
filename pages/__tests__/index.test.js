@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {expect} from 'chai';
+import expect from 'expect';
 import Index from '../index';
 import Layout from '../../components/layout';
 
@@ -13,9 +13,10 @@ describe("Index", ()=>{
 
     it('renders without crashing', () => {
         shallow(<Index />);
+        expect(mountedIndex).toMatchSnapshot();
     });
 
     it('expect to have Layout component', () => {
-        expect(mountedIndex.find(Layout)).to.have.lengthOf(1);
+        expect(mountedIndex.find(Layout)).toHaveLength(1);
     });
 });

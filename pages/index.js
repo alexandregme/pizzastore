@@ -3,7 +3,11 @@ import Layout from '../components/layout';
 
 class Index extends Component {
     render() {
-        return (<Layout />);
+        return (
+            <Layout>
+                <p>Home Page</p>
+            </Layout>
+        );
     }
 }
 
