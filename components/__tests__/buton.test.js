@@ -15,7 +15,26 @@ describe("Button", ()=>{
     expect(mountedButton).toMatchSnapshot();
   });
 
-  it('expect to have button tag', () => {
-    expect(mountedButton.find('button')).toHaveLength(1);
+  it('expect to have button tag with default value', () => {
+    let button = mountedButton.find('button');
+    expect(button).toHaveLength(1);
+    expect(button.text()).toEqual('button');
+  });
+});
+
+describe("Button Custom component props", ()=>{
+  let mountedButton;
+  let props = {
+    label: 'custom button'
+  };
+
+  beforeEach(()=>{
+    mountedButton = shallow(<Button {...props} />);
+  });
+
+  it('expect to set the label custom button', () => {
+    let button = mountedButton.find('button');
+    expect(button).toHaveLength(1);
+    expect(button.text()).toEqual('custom button');
   });
 });

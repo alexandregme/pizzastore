@@ -15,25 +15,85 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": "pizza size",
+      "children": Array [
+        <p>
+          pizza size
+        </p>,
+        <Button
+          label="add to cart"
+        />,
+      ],
     },
     "ref": null,
-    "rendered": "pizza size",
-    "type": "p",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "pizza size",
+        },
+        "ref": null,
+        "rendered": "pizza size",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "label": "add to cart",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "pizza size",
+        "children": Array [
+          <p>
+            pizza size
+          </p>,
+          <Button
+            label="add to cart"
+          />,
+        ],
       },
       "ref": null,
-      "rendered": "pizza size",
-      "type": "p",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "pizza size",
+          },
+          "ref": null,
+          "rendered": "pizza size",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "label": "add to cart",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

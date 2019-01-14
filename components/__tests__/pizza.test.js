@@ -2,6 +2,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import expect from 'expect';
 import Pizza from '../pizza';
+import Button from "../button";
 
 describe("Pizza", ()=>{
   let mountedPizza;
@@ -18,6 +19,10 @@ describe("Pizza", ()=>{
     let pizzaSize = mountedPizza.find('p');
     expect(pizzaSize).toHaveLength(1);
     expect(pizzaSize.text()).toEqual('pizza size');
+  });
+
+  it('expect to have Button component', () => {
+    expect(mountedPizza.find(Button)).toHaveLength(1);
   });
 });
 
