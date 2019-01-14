@@ -3,6 +3,8 @@ import {shallow} from 'enzyme';
 import expect from 'expect';
 import Index from '../index';
 import Layout from '../../components/layout';
+import Pizzas from "../../components/pizzas";
+
 
 describe("Index page", ()=>{
     let mountedIndex;
@@ -18,5 +20,9 @@ describe("Index page", ()=>{
 
     it('expect to have Layout component', () => {
         expect(mountedIndex.find(Layout)).toHaveLength(1);
+    });
+
+    it('expect to have Pizzas component', () => {
+      expect(mountedIndex.find(Pizzas)).toHaveLength(1);
     });
 });
