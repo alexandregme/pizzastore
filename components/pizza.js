@@ -5,7 +5,7 @@ import Button from "./button";
 const Pizza = ({pizzaSize = 'pizza size'}) =>(
   <React.Fragment>
     <p>{pizzaSize}</p>
-    <Button label='add to cart'/>
+    <Button label={'add to cart'}/>
   </React.Fragment>
 );
 

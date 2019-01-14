@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import expect from 'expect';
-import Button from '../Button';
+import Button from '../button';
 
 describe("Button", ()=>{
   let mountedButton;
