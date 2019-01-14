@@ -5,17 +5,17 @@ import Layout from '../layout';
 import Head from "../head";
 
 describe("Layout", ()=>{
-    let mountedIndex;
+    let mountedLayout;
     beforeEach(()=>{
-        mountedIndex = shallow(<Layout />);
+      mountedLayout = shallow(<Layout />);
     });
 
     it('renders without crashing', () => {
         shallow(<Layout />);
-        expect(mountedIndex).toMatchSnapshot();
+        expect(mountedLayout).toMatchSnapshot();
     });
 
     it('expect to have Head component', () => {
-        expect(mountedIndex.find(Head)).toHaveLength(1);
+        expect(mountedLayout.find(Head)).toHaveLength(1);
     });
 });
