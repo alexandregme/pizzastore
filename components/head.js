@@ -11,7 +11,7 @@ const Head = ({title = 'Pizza Store :)'}) => (
 );
 
 Head.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string
 };
 
 export default Head;
