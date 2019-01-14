@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NextHead from 'next/head';
 
 const Head = ({title = 'Pizza Store :)'}) => (
@@ -8,5 +9,9 @@ const Head = ({title = 'Pizza Store :)'}) => (
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </NextHead>
 );
+
+Head.propTypes = {
+  title: PropTypes.string.isRequired
+};
 
 export default Head;
