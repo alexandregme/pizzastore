@@ -10,7 +10,7 @@
     "heroku-postbuild": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch --coverage --no-cache",
-    "lint": "eslint ./components ./pages",
+    "lint": "eslint ./components ./pages ./actions ./reducers",
     "lint:watch": "watch 'npm run lint' ./components ./pages ./actions ./reducers"
   },
   "repository": {
