@@ -1,41 +1,38 @@
 import cart from '../../reducers/cart';
+import deepFreeze from 'deep-freeze';
 
 describe('cart reducer', () => {
+
+  const pizzaSmall = {
+    type: 'ADD_TO_CART',
+    pizzaSize: 'SMALL'
+  };
+
+  const pizzaLarge = {
+    type: 'ADD_TO_CART',
+    pizzaSize: 'LARGE'
+  };
+
+  let cartBefore;
+  let cartAfter;
+
   it('should return the initial state', () => {
     expect(cart(undefined, {})).toEqual([])
   });
 
-  it('should handle ADD_TO_CART', () => {
-    expect(
-      cart([], {
-        type: 'ADD_TO_CART',
-        pizzaSize: 'SMALL'
-      })
-    ).toEqual([
-      {
-        pizzaSize: 'SMALL'
-      }
-    ]);
+  it('should handle ADD_TO_CART with deepFreeze mutation', () => {
 
-    expect(
-      cart(
-        [
-          {
-            pizzaSize: 'SMALL'
-          }
-        ],
-        {
-          type: 'ADD_TO_CART',
-          pizzaSize: 'LARGE'
-        }
-      )
-    ).toEqual([
-      {
-        pizzaSize: 'SMALL'
-      },
-      {
-        pizzaSize: 'LARGE'
-      }
-    ])
-  })
+    cartBefore = [];
+    cartAfter = [{pizzaSize: 'SMALL'}];
+
+    deepFreeze(cartBefore);
+
+    expect(cart(cartBefore, pizzaSmall)).toEqual(cartAfter);
+
+    cartBefore = [{pizzaSize: 'SMALL'}];
+    cartAfter = [{pizzaSize: 'SMALL'}, {pizzaSize: 'LARGE'}];
+
+    deepFreeze(cartBefore);
+    expect(cart(cartBefore,pizzaLarge)).toEqual(cartAfter);
+  });
 });

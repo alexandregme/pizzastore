@@ -28,6 +28,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "chai": "^4.2.0",
+    "deep-freeze": "^0.0.1",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "eslint": "^5.11.0",
