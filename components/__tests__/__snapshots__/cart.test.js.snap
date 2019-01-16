@@ -17,9 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <span>
+      "children": <p>
         your cart is empty.
-      </span>,
+      </p>,
     },
     "ref": null,
     "rendered": Object {
@@ -31,7 +31,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": "your cart is empty.",
-      "type": "span",
+      "type": "p",
     },
     "type": Symbol(react.fragment),
   },
@@ -41,9 +41,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <span>
+        "children": <p>
           your cart is empty.
-        </span>,
+        </p>,
       },
       "ref": null,
       "rendered": Object {
@@ -55,7 +55,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "your cart is empty.",
-        "type": "span",
+        "type": "p",
       },
       "type": Symbol(react.fragment),
     },

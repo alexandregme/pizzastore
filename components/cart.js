@@ -14,7 +14,7 @@ export const Cart = ({cartItems = []}) => (
     {cartItems.length > 0 ? (
       renderCartItems(cartItems)
     ) : (
-      <span>your cart is empty.</span>
+      <p>your cart is empty.</p>
     )}
   </React.Fragment>
 );

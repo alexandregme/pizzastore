@@ -8,7 +8,7 @@ export const CartItem = ({cartItem = {pizzaSize: 'cart item'}, handleRemoveFromC
   <React.Fragment>
     <p>{cartItem.pizzaSize}</p>
     <Button
-      label={`remove item ${cartItem.id}`}
+      label={`remove item`}
       handleClick={() => {handleRemoveFromCart(cartItem.id);}}
     />
   </React.Fragment>

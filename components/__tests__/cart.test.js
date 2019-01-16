@@ -17,7 +17,7 @@ describe("Cart", ()=>{
   });
 
   it('expect to show no empty cart msg', () => {
-    let emptyCart = mountedCart.find('span');
+    let emptyCart = mountedCart.find('p');
     expect(emptyCart).toHaveLength(1);
     expect(emptyCart.text()).toEqual('your cart is empty.');
   });
