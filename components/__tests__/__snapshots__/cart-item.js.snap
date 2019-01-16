@@ -15,25 +15,89 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": "cart item",
+      "children": Array [
+        <p>
+          cart item
+        </p>,
+        <Button
+          handleClick={[Function]}
+          label="remove item"
+        />,
+      ],
     },
     "ref": null,
-    "rendered": "cart item",
-    "type": "p",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "cart item",
+        },
+        "ref": null,
+        "rendered": "cart item",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleClick": [Function],
+          "label": "remove item",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": "cart item",
+        "children": Array [
+          <p>
+            cart item
+          </p>,
+          <Button
+            handleClick={[Function]}
+            label="remove item"
+          />,
+        ],
       },
       "ref": null,
-      "rendered": "cart item",
-      "type": "p",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "cart item",
+          },
+          "ref": null,
+          "rendered": "cart item",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleClick": [Function],
+            "label": "remove item",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

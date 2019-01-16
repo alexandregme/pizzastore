@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import Button from "./button";
 
-const CartItem = ({cartItem = 'cart item'}) => <p>{cartItem}</p>;
+const CartItem = ({cartItem = 'cart item'}) =>(
+  <React.Fragment>
+    <p>{cartItem}</p>
+    <Button
+      label={'remove item'}
+      handleClick={() => {}}
+    />
+  </React.Fragment>
+);
 
 CartItem.propTypes = {
   cartItem: PropTypes.string
