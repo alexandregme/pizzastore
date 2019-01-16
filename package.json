@@ -11,7 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watch --coverage --no-cache",
     "lint": "eslint ./components ./pages",
-    "lint:watch": "watch 'npm run lint' ./components ./pages"
+    "lint:watch": "watch 'npm run lint' ./components ./pages ./actions ./reducers"
   },
   "repository": {
     "type": "git",
