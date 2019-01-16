@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import Layout from '../components/layout';
+import App from '../components/app';
+import Cart from '../components/cart';
 
-class Cart extends Component {
+class CartPage extends Component {
     render() {
         return (
-            <Layout title="Cart Page">
-                <p>Cart Page</p>
-            </Layout>
+            <App title="Cart Page">
+                <Cart />
+            </App>
         );
     }
 }
 
-export default Cart;
+export default CartPage;

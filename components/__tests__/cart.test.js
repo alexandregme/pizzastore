@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import Cart from '../cart';
-import CartItem from "../cart-item";
+import { Cart } from '../cart';
+import CartItem from '../cart-item';
 
 describe("Cart", ()=>{
   let mountedCart;
@@ -26,7 +26,7 @@ describe("Cart", ()=>{
 describe("Cart Custom component props", ()=>{
   let mountedCart;
   let props = {
-    cartItems: ['SMALL', 'MEDIUM', 'LARGE']
+    cartItems: [{pizzaSize:'SMALL'}, {pizzaSize:'MEDIUM'}, {pizzaSize:'LARGE'}]
   };
 
   beforeEach(()=>{

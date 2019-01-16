@@ -30,7 +30,7 @@ describe("Cart Item", ()=>{
 describe("Cart Custom component props", ()=>{
   let mountedCartItem;
   let props = {
-    cartItem: 'SMALL'
+    cartItem: {pizzaSize: 'SMALL'}
   };
 
   beforeEach(()=>{

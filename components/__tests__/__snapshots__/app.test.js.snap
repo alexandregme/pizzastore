@@ -33,6 +33,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": undefined,
+        "title": undefined,
       },
       "ref": null,
       "rendered": null,
@@ -62,6 +63,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": undefined,
+          "title": undefined,
         },
         "ref": null,
         "rendered": null,

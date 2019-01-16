@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from "prop-types";
 import Button from "./button";
 
-const CartItem = ({cartItem = 'cart item'}) =>(
+const CartItem = ({cartItem = {pizzaSize: 'cart item'}}) =>(
   <React.Fragment>
-    <p>{cartItem}</p>
+    <p>{cartItem.pizzaSize}</p>
     <Button
       label={'remove item'}
       handleClick={() => {}}
@@ -13,7 +13,7 @@ const CartItem = ({cartItem = 'cart item'}) =>(
 );
 
 CartItem.propTypes = {
-  cartItem: PropTypes.string
+  cartItem: PropTypes.object
 };
 
 export default CartItem;

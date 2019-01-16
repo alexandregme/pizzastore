@@ -3,7 +3,7 @@
 exports[`Cart page renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Cart />,
+  Symbol(enzyme.__unrendered__): <CartPage />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,22 +17,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <p>
-        Cart Page
-      </p>,
+      "children": <Connect(Cart) />,
       "title": "Cart Page",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Cart Page",
-      },
+      "nodeType": "class",
+      "props": Object {},
       "ref": null,
-      "rendered": "Cart Page",
-      "type": "p",
+      "rendered": null,
+      "type": [Function],
     },
     "type": [Function],
   },
@@ -42,22 +38,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <p>
-          Cart Page
-        </p>,
+        "children": <Connect(Cart) />,
         "title": "Cart Page",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Cart Page",
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
-        "rendered": "Cart Page",
-        "type": "p",
+        "rendered": null,
+        "type": [Function],
       },
       "type": [Function],
     },

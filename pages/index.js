@@ -5,17 +5,17 @@ import Cart from "../components/cart";
 
 const pizzaSizes = ['SMALL', 'MEDIUM', 'LARGE'];
 
-class Index extends Component {
+class IndexPage extends Component {
     render() {
         return (
             <App title="Home Page">
               <React.Fragment>
                 <Pizzas pizzaSizes={pizzaSizes}/>
-                <Cart cartItems={pizzaSizes}/>
+                <Cart />
               </React.Fragment>
             </App>
         );
     }
 }
 
-export default Index;
+export default IndexPage;

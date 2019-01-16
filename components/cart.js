@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import { connect } from 'react-redux';
 import CartItem from "./cart-item";
 
 const renderCartItems = cartItems => cartItems.map(
@@ -8,7 +9,7 @@ const renderCartItems = cartItems => cartItems.map(
   }
 );
 
-const Cart = ({cartItems = []}) => (
+export const Cart = ({cartItems = []}) => (
   <React.Fragment>
     {cartItems.length > 0 ? (
       renderCartItems(cartItems)
@@ -22,5 +23,10 @@ Cart.propTypes = {
   cartItems: PropTypes.array
 };
 
+const mapStateToProps = state => ({
+  cartItems: state.cart
+});
 
-export default Cart;
+export default connect(
+  mapStateToProps
+)(Cart);

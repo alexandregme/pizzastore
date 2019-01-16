@@ -3,12 +3,12 @@ import deepFreeze from 'deep-freeze';
 
 describe('cart reducer', () => {
 
-  const pizzaSmall = {
+  const actionSmallPizza = {
     type: 'ADD_TO_CART',
     pizzaSize: 'SMALL'
   };
 
-  const pizzaLarge = {
+  const actionLargePizza = {
     type: 'ADD_TO_CART',
     pizzaSize: 'LARGE'
   };
@@ -27,12 +27,12 @@ describe('cart reducer', () => {
 
     deepFreeze(cartBefore);
 
-    expect(cart(cartBefore, pizzaSmall)).toEqual(cartAfter);
+    expect(cart(cartBefore, actionSmallPizza)).toEqual(cartAfter);
 
     cartBefore = [{pizzaSize: 'SMALL'}];
     cartAfter = [{pizzaSize: 'SMALL'}, {pizzaSize: 'LARGE'}];
 
     deepFreeze(cartBefore);
-    expect(cart(cartBefore,pizzaLarge)).toEqual(cartAfter);
+    expect(cart(cartBefore,actionLargePizza)).toEqual(cartAfter);
   });
 });
