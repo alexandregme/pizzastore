@@ -4,7 +4,7 @@ import expect from 'expect';
 import Index from '../index';
 import App from '../../components/app';
 import Pizzas from "../../components/pizzas";
-
+import Cart from "../../components/cart";
 
 describe("Index page", ()=>{
     let mountedIndex;
@@ -24,5 +24,9 @@ describe("Index page", ()=>{
 
     it('expect to have Pizzas component', () => {
       expect(mountedIndex.find(Pizzas)).toHaveLength(1);
+    });
+
+    it('expect to have Pizzas component', () => {
+      expect(mountedIndex.find(Cart)).toHaveLength(1);
     });
 });

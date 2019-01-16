@@ -17,15 +17,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <Pizzas
-        pizzaSizes={
-          Array [
-            "SMALL",
-            "MEDIUM",
-            "LARGE",
-          ]
-        }
-      />,
+      "children": <React.Fragment>
+        <Pizzas
+          pizzaSizes={
+            Array [
+              "SMALL",
+              "MEDIUM",
+              "LARGE",
+            ]
+          }
+        />
+        <Cart
+          cartItems={
+            Array [
+              "SMALL",
+              "MEDIUM",
+              "LARGE",
+            ]
+          }
+        />
+      </React.Fragment>,
       "title": "Home Page",
     },
     "ref": null,
@@ -34,15 +45,61 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "pizzaSizes": Array [
-          "SMALL",
-          "MEDIUM",
-          "LARGE",
+        "children": Array [
+          <Pizzas
+            pizzaSizes={
+              Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ]
+            }
+          />,
+          <Cart
+            cartItems={
+              Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ]
+            }
+          />,
         ],
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "pizzaSizes": Array [
+              "SMALL",
+              "MEDIUM",
+              "LARGE",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cartItems": Array [
+              "SMALL",
+              "MEDIUM",
+              "LARGE",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
     },
     "type": [Function],
   },
@@ -52,15 +109,26 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <Pizzas
-          pizzaSizes={
-            Array [
-              "SMALL",
-              "MEDIUM",
-              "LARGE",
-            ]
-          }
-        />,
+        "children": <React.Fragment>
+          <Pizzas
+            pizzaSizes={
+              Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ]
+            }
+          />
+          <Cart
+            cartItems={
+              Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ]
+            }
+          />
+        </React.Fragment>,
         "title": "Home Page",
       },
       "ref": null,
@@ -69,15 +137,61 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "pizzaSizes": Array [
-            "SMALL",
-            "MEDIUM",
-            "LARGE",
+          "children": Array [
+            <Pizzas
+              pizzaSizes={
+                Array [
+                  "SMALL",
+                  "MEDIUM",
+                  "LARGE",
+                ]
+              }
+            />,
+            <Cart
+              cartItems={
+                Array [
+                  "SMALL",
+                  "MEDIUM",
+                  "LARGE",
+                ]
+              }
+            />,
           ],
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "pizzaSizes": Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "cartItems": Array [
+                "SMALL",
+                "MEDIUM",
+                "LARGE",
+              ],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Symbol(react.fragment),
       },
       "type": [Function],
     },
