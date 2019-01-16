@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import CartItem from '../cart-item';
+import { CartItem } from '../cart-item';
 import Button from "../button";
 
 describe("Cart Item", ()=>{
