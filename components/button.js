@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const Button = ({label = 'button'}) => <button>{label}</button>;
+const Button = ({label = 'button', handleClick = ()=>{} }) => <button onClick={handleClick}>{label}</button>;
 
 Button.propTypes = {
-  label: PropTypes.string
+  label: PropTypes.string,
+  handleClick: PropTypes.func
 };
 
 export default Button;
