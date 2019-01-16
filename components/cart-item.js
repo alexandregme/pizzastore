@@ -6,7 +6,7 @@ const CartItem = ({cartItem = {pizzaSize: 'cart item'}}) =>(
   <React.Fragment>
     <p>{cartItem.pizzaSize}</p>
     <Button
-      label={'remove item'}
+      label={`remove item ${cartItem.id}`}
       handleClick={() => {}}
     />
   </React.Fragment>
