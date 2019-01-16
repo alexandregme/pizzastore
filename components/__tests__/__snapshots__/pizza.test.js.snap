@@ -22,6 +22,7 @@ ShallowWrapper {
           pizza size
         </p>,
         <Button
+          handleClick={[Function]}
           label="add to cart"
         />,
       ],
@@ -44,6 +45,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "handleClick": [Function],
           "label": "add to cart",
         },
         "ref": null,
@@ -64,6 +66,7 @@ ShallowWrapper {
             pizza size
           </p>,
           <Button
+            handleClick={[Function]}
             label="add to cart"
           />,
         ],
@@ -86,6 +89,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "handleClick": [Function],
             "label": "add to cart",
           },
           "ref": null,

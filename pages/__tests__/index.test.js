@@ -1,8 +1,8 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import expect from 'expect';
 import Index from '../index';
-import Layout from '../../components/layout';
+import App from '../../components/app';
 import Pizzas from "../../components/pizzas";
 
 
@@ -18,8 +18,8 @@ describe("Index page", ()=>{
         expect(mountedIndex).toMatchSnapshot();
     });
 
-    it('expect to have Layout component', () => {
-        expect(mountedIndex.find(Layout)).toHaveLength(1);
+    it('expect to have App component', () => {
+        expect(mountedIndex.find(App)).toHaveLength(1);
     });
 
     it('expect to have Pizzas component', () => {
