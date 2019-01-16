@@ -8,9 +8,9 @@ import Layout from "./layout";
 
 const store = createStore(reducers, composeWithDevTools(applyMiddleware()));
 
-const App = ({children, props}) => (
+const App = ({children, title}) => (
   <Provider store={store}>
-    <Layout {...props}>
+    <Layout title={title}>
       {children}
     </Layout>
   </Provider>
