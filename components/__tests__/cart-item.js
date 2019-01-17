@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import expect from 'expect';
 import { CartItem } from '../cart-item';
 import Button from "../button";
+import {CUSTOM_PIZZA} from "../../__mocks__";
 
 describe("Cart Item", ()=>{
   let mountedCartItem;
@@ -29,17 +30,27 @@ describe("Cart Item", ()=>{
 
 describe("Cart Custom component props", ()=>{
   let mountedCartItem;
-  let props = {
-    cartItem: {pizzaSize: 'SMALL'}
-  };
+  let props = {cartItem: CUSTOM_PIZZA};
 
   beforeEach(()=>{
     mountedCartItem = shallow(<CartItem {...props} />);
   });
 
-  it('expect to set the name of the cart item', () => {
-    let cartItem = mountedCartItem.find('p');
-    expect(cartItem).toHaveLength(1);
-    expect(cartItem.text()).toEqual('SMALL');
+  it('expect to have default value for pizza name', () => {
+    let pizzaNameValue = mountedPizza.find('p.pizzaName');
+    expect(pizzaNameValue).toHaveLength(1);
+    expect(pizzaNameValue.text()).toEqual('custom pizza');
+  });
+
+  it('expect to have default value for pizza max toppings', () => {
+    let pizzaMaxToppingValue = mountedPizza.find('p.pizzaMaxToppings');
+    expect(pizzaMaxToppingValue).toHaveLength(1);
+    expect(pizzaMaxToppingValue.text()).toEqual("1");
+  });
+
+  it('expect to have default value for base price', () => {
+    let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
+    expect(pizzaBasePriceValue).toHaveLength(1);
+    expect(pizzaBasePriceValue.text()).toEqual("1");
   });
 });

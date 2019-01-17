@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import expect from 'expect';
 import { Pizza } from '../pizza';
 import Button from "../button";
+import { CUSTOM_PIZZA } from "../../__mocks__";
 
 describe("Pizza", ()=>{
   let mountedPizza;
@@ -15,10 +16,22 @@ describe("Pizza", ()=>{
     expect(mountedPizza).toMatchSnapshot();
   });
 
-  it('expect to have default value for pizza size', () => {
-    let pizzaSize = mountedPizza.find('p');
-    expect(pizzaSize).toHaveLength(1);
-    expect(pizzaSize.text()).toEqual('pizza size');
+  it('expect to have default value for pizza name', () => {
+    let pizzaNameValue = mountedPizza.find('p.pizzaName');
+    expect(pizzaNameValue).toHaveLength(1);
+    expect(pizzaNameValue.text()).toEqual('default pizza');
+  });
+
+  it('expect to have default value for pizza max toppings', () => {
+    let pizzaMaxToppingValue = mountedPizza.find('p.pizzaMaxToppings');
+    expect(pizzaMaxToppingValue).toHaveLength(1);
+    expect(pizzaMaxToppingValue.text()).toEqual("0");
+  });
+
+  it('expect to have default value for base price', () => {
+    let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
+    expect(pizzaBasePriceValue).toHaveLength(1);
+    expect(pizzaBasePriceValue.text()).toEqual("0");
   });
 
   it('expect to have Button component', () => {
@@ -28,17 +41,27 @@ describe("Pizza", ()=>{
 
 describe("Pizza Custom component props", ()=>{
   let mountedPizza;
-  let props = {
-    pizzaSize: 'SMALL'
-  };
+  let props = {pizza:CUSTOM_PIZZA};
 
   beforeEach(()=>{
     mountedPizza = shallow(<Pizza {...props} />);
   });
 
-  it('expect to set the name of the pizza', () => {
-    let pizzaSize = mountedPizza.find('p');
-    expect(pizzaSize).toHaveLength(1);
-    expect(pizzaSize.text()).toEqual('SMALL');
+  it('expect to have default value for pizza name', () => {
+    let pizzaNameValue = mountedPizza.find('p.pizzaName');
+    expect(pizzaNameValue).toHaveLength(1);
+    expect(pizzaNameValue.text()).toEqual('custom pizza');
+  });
+
+  it('expect to have default value for pizza max toppings', () => {
+    let pizzaMaxToppingValue = mountedPizza.find('p.pizzaMaxToppings');
+    expect(pizzaMaxToppingValue).toHaveLength(1);
+    expect(pizzaMaxToppingValue.text()).toEqual("1");
+  });
+
+  it('expect to have default value for base price', () => {
+    let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
+    expect(pizzaBasePriceValue).toHaveLength(1);
+    expect(pizzaBasePriceValue.text()).toEqual("1");
   });
 });

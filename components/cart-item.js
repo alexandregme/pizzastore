@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { removeFromCart } from "../actions";
 import Button from "./button";
+import { DEFAULT_PIZZA } from "../__mocks__";
 
-export const CartItem = ({cartItem = {pizzaSize: 'cart item'}, handleRemoveFromCart}) =>(
+export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart}) =>(
   <React.Fragment>
-    <p>{cartItem.pizzaSize}</p>
+    <p className="pizzaName">{cartItem.name}</p>
+    <p className="pizzaMaxToppings">{cartItem.maxToppings}</p>
+    <p className="pizzaBasePrice">{cartItem.basePrice}</p>
     <Button
       label={`remove item`}
       handleClick={() => {handleRemoveFromCart(cartItem.id);}}

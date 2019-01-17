@@ -1,6 +1,6 @@
-export const addToCart = pizzaSize => ({
+export const addToCart = pizza => ({
   type: 'ADD_TO_CART',
-  pizzaSize
+  pizza
 });
 
 

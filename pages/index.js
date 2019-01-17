@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import App from "../components/app";
 import Pizzas from "../components/pizzas";
 import Cart from "../components/cart";
-
-const pizzaSizes = ['SMALL', 'MEDIUM', 'LARGE'];
+import { PIZZAS } from "../__mocks__";
 
 class IndexPage extends Component {
     render() {
         return (
             <App title="Home Page">
               <React.Fragment>
-                <Pizzas pizzaSizes={pizzaSizes}/>
+                <Pizzas pizzas={PIZZAS}/>
                 <Cart />
               </React.Fragment>
             </App>

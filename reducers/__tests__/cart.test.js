@@ -1,19 +1,20 @@
 import cart from '../../reducers/cart';
 import deepFreeze from 'deep-freeze';
+import { CUSTOM_PIZZA } from '../../__mocks__';
 
 describe('cart reducer', () => {
 
   const actionAddSmallPizza = {
     type: 'ADD_TO_CART',
-    pizzaSize: 'SMALL'
+    pizza: CUSTOM_PIZZA
   };
 
   const actionAddLargePizza = {
     type: 'ADD_TO_CART',
-    pizzaSize: 'LARGE'
+    pizza: CUSTOM_PIZZA
   };
 
-  const actionRemoveByid = {
+  const actionRemoveById = {
     type: 'REMOVE_FROM_CART',
     id: 1
   };
@@ -28,15 +29,15 @@ describe('cart reducer', () => {
   it('should handle ADD_TO_CART with deepFreeze mutation', () => {
 
     cartBefore = [];
-    cartAfter = [{"id": 0, "pizzaSize": "SMALL"}];
+    cartAfter = [{"id": 0, ...CUSTOM_PIZZA}];
 
     deepFreeze(cartBefore);
     deepFreeze(actionAddSmallPizza);
 
     expect(cart(cartBefore, actionAddSmallPizza)).toEqual(cartAfter);
 
-    cartBefore = [{"id": 0, "pizzaSize": "SMALL"}];
-    cartAfter = [{"id": 0, "pizzaSize": "SMALL"}, {"id": 1, "pizzaSize": "LARGE"}];
+    cartBefore = [{"id": 0, ...CUSTOM_PIZZA}];
+    cartAfter = [{"id": 0, ...CUSTOM_PIZZA}, {"id": 1, ...CUSTOM_PIZZA}];
 
     deepFreeze(cartBefore);
     deepFreeze(actionAddLargePizza);
@@ -49,8 +50,8 @@ describe('cart reducer', () => {
     cartAfter = [];
 
     deepFreeze(cartBefore);
-    deepFreeze(actionRemoveByid);
+    deepFreeze(actionRemoveById);
 
-    expect(cart(cartBefore, actionRemoveByid)).toEqual(cartAfter);
+    expect(cart(cartBefore, actionRemoveById)).toEqual(cartAfter);
   });
 });

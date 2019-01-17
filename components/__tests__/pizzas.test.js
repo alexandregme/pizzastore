@@ -1,8 +1,9 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 import expect from 'expect';
 import Pizzas from '../pizzas';
 import Pizza from '../pizza';
+import { PIZZAS } from "../../__mocks__";
 
 describe("Pizzas", ()=>{
   let mountedPizzas;
@@ -25,7 +26,7 @@ describe("Pizzas", ()=>{
 describe("Pizzas Custom component props", ()=>{
   let mountedPizzas;
   let props = {
-    pizzaSizes: ['SMALL', 'MEDIUM', 'LARGE']
+    pizzas: PIZZAS
   };
 
   beforeEach(()=>{

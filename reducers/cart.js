@@ -6,7 +6,7 @@ const cart = (state = [], action) => {
           ...state,
           {
             id: nextid++,
-            pizzaSize: action.pizzaSize
+            ...action.pizza
           }
         ];
     case 'REMOVE_FROM_CART':

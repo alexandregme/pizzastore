@@ -3,24 +3,27 @@ import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { addToCart } from '../actions';
 import Button from "./button";
+import { DEFAULT_PIZZA } from "../__mocks__";
 
-export const Pizza = ({pizzaSize = 'pizza size', handleAddToCart}) =>(
+export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
   <React.Fragment>
-    <p>{pizzaSize}</p>
+    <p className="pizzaName">{pizza.name}</p>
+    <p className="pizzaMaxToppings">{pizza.maxToppings}</p>
+    <p className="pizzaBasePrice">{pizza.basePrice}</p>
     <Button
       label={'add to cart'}
-      handleClick={() => {handleAddToCart(pizzaSize);}}
+      handleClick={() => {handleAddToCart(pizza);}}
     />
   </React.Fragment>
 );
 
 Pizza.propTypes = {
-  pizzaSize: PropTypes.string,
+  pizza: PropTypes.object,
   handleAddToCart: PropTypes.func
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleAddToCart: () => dispatch(addToCart(ownProps.pizzaSize))
+  handleAddToCart: () => dispatch(addToCart(ownProps.pizza))
 });
 
 export default connect(

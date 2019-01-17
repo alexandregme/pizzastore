@@ -2,21 +2,16 @@ import React from 'react';
 import Pizza from "./pizza";
 import PropTypes from "prop-types";
 
-const renderPizzasSizes = pizzaSizes => pizzaSizes.map(
-  (pizzaSize,id) =>{
-    return (<Pizza key={id} pizzaSize={pizzaSize}/>);
-  }
+const renderPizzas = pizzas => (
+  pizzas.length > 0 ?
+    pizzas.map((pizza,id) => <Pizza key={id} pizza={pizza}/>) :
+    <span>No pizzas were found, plz come back soon.</span>
 );
 
-const Pizzas = ({pizzaSizes = []}) => (
+const Pizzas = ({pizzas = []}) => (
   <React.Fragment>
-    {pizzaSizes.length > 0 ? (
-      renderPizzasSizes(pizzaSizes)
-    ) : (
-      <span>No pizzas were found, plz come back soon.</span>
-    )}
+    {renderPizzas(pizzas)}
   </React.Fragment>
-
 );
 
 Pizzas.propTypes = {
