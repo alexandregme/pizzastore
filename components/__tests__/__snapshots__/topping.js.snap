@@ -17,57 +17,24 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <input
-          checked={false}
-          id="id-default topping"
-          type="checkbox"
-        />,
-        <label
-          htmlFor="id-default topping"
-        >
-          default topping
-           - 
-          0
-        </label>,
-      ],
+      "children": <Checkbox
+        isChecked={false}
+        label="default topping-0"
+      />,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "checked": false,
-          "id": "id-default topping",
-          "type": "checkbox",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "isChecked": false,
+        "label": "default topping-0",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "default topping",
-            " - ",
-            0,
-          ],
-          "htmlFor": "id-default topping",
-        },
-        "ref": null,
-        "rendered": Array [
-          "default topping",
-          " - ",
-          0,
-        ],
-        "type": "label",
-      },
-    ],
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
     "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
@@ -76,57 +43,24 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <input
-            checked={false}
-            id="id-default topping"
-            type="checkbox"
-          />,
-          <label
-            htmlFor="id-default topping"
-          >
-            default topping
-             - 
-            0
-          </label>,
-        ],
+        "children": <Checkbox
+          isChecked={false}
+          label="default topping-0"
+        />,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "checked": false,
-            "id": "id-default topping",
-            "type": "checkbox",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "isChecked": false,
+          "label": "default topping-0",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "default topping",
-              " - ",
-              0,
-            ],
-            "htmlFor": "id-default topping",
-          },
-          "ref": null,
-          "rendered": Array [
-            "default topping",
-            " - ",
-            0,
-          ],
-          "type": "label",
-        },
-      ],
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       "type": Symbol(react.fragment),
     },
   ],

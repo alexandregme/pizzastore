@@ -1,18 +1,10 @@
 import React from 'react';
 import { DEFAULT_TOPPING } from "../__mocks__";
+import Checkbox from "./checkbox";
 
 const Topping = ({topping = DEFAULT_TOPPING}) => (
   <React.Fragment>
-    <input
-      type="checkbox"
-      id={`id-${topping.name}`}
-      checked={topping.isChecked}
-    />
-    <label
-      htmlFor={`id-${topping.name}`}
-    >
-      {topping.name} - {topping.price}
-    </label>
+    <Checkbox label={`${topping.name}-${topping.price}`} isChecked={topping.isChecked}/>
   </React.Fragment>
 );
 
