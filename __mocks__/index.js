@@ -55,7 +55,11 @@ export const CUSTOM_PIZZA = {
   "name": "custom pizza",
   "maxToppings": 1,
   "basePrice": 1,
-  TOPPINGS
+  toppings:[{
+    name:"topping 1",
+    price:1,
+    isChecked:true
+  }]
 };
 
 export const PIZZAS = [{

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import Topping from '../topping';
+import { Topping } from '../topping';
 import Checkbox from "../checkbox";
 
 describe("Topping", ()=>{

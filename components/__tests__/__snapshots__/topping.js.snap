@@ -28,6 +28,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "handleChange": undefined,
         "isChecked": false,
         "label": "default topping-0",
       },
@@ -54,6 +55,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "handleChange": undefined,
           "isChecked": false,
           "label": "default topping-0",
         },

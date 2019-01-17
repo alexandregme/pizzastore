@@ -20,11 +20,12 @@ ShallowWrapper {
       "children": Array [
         <input
           checked={false}
-          id={true}
+          id="checkbox_5618497041418344"
+          onChange={[Function]}
           type="checkbox"
         />,
         <label
-          htmlFor="checkbox_0.4051207639031569"
+          htmlFor="checkbox_5618497041418344"
         >
           default label
         </label>,
@@ -38,7 +39,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "checked": false,
-          "id": true,
+          "id": "checkbox_5618497041418344",
+          "onChange": [Function],
           "type": "checkbox",
         },
         "ref": null,
@@ -51,7 +53,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "default label",
-          "htmlFor": "checkbox_0.4051207639031569",
+          "htmlFor": "checkbox_5618497041418344",
         },
         "ref": null,
         "rendered": "default label",
@@ -69,11 +71,12 @@ ShallowWrapper {
         "children": Array [
           <input
             checked={false}
-            id={true}
+            id="checkbox_5618497041418344"
+            onChange={[Function]}
             type="checkbox"
           />,
           <label
-            htmlFor="checkbox_0.4051207639031569"
+            htmlFor="checkbox_5618497041418344"
           >
             default label
           </label>,
@@ -87,7 +90,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "checked": false,
-            "id": true,
+            "id": "checkbox_5618497041418344",
+            "onChange": [Function],
             "type": "checkbox",
           },
           "ref": null,
@@ -100,7 +104,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "default label",
-            "htmlFor": "checkbox_0.4051207639031569",
+            "htmlFor": "checkbox_5618497041418344",
           },
           "ref": null,
           "rendered": "default label",

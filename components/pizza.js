@@ -11,7 +11,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
     <p className="pizzaName">{pizza.name}</p>
     <p className="pizzaMaxToppings">{pizza.maxToppings}</p>
     <p className="pizzaBasePrice">{pizza.basePrice}</p>
-    <Toppings toppings={pizza.toppings}/>
+    <Toppings toppings={pizza.toppings} pizzaName={pizza.name}/>
     <Button
       label={'add to cart'}
       handleClick={() => {handleAddToCart(pizza);}}

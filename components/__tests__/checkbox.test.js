@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
 import Checkbox from '../checkbox';
+import jest from "jest-mock";
 
 describe("Checkbox", ()=>{
   let mountedCheckbox;
@@ -23,6 +24,13 @@ describe("Checkbox", ()=>{
     let label = mountedCheckbox.find('label');
     expect(label).toHaveLength(1);
     expect(label.text()).toEqual('default label');
+  });
+
+  it('call a function passed to it when change', ()=>{
+    const mockCallBack = jest.fn();
+    const mountedInputWithCallback = shallow(<Checkbox handleChange={mockCallBack} />);
+    mountedInputWithCallback.find('input').simulate('change');
+    expect(mockCallBack.mock.calls.length).toEqual(1);
   });
 });
 

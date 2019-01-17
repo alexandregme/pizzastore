@@ -1,6 +1,6 @@
 import React from 'react';
 import expect from 'expect';
-import { addToCart, removeFromCart, fetchPizzas} from '../../actions';
+import { addToCart, removeFromCart, fetchPizzas, toggleTopping} from '../../actions';
 import { PIZZAS, CUSTOM_PIZZA} from '../../__mocks__';
 
 describe('Actions', () => {
@@ -28,5 +28,16 @@ describe('Actions', () => {
       id
     };
     expect(removeFromCart(id)).toEqual(expectedAction);
+  });
+
+  it('should create an action to toggle topping from pizza', () => {
+    const toppingName = 'topping';
+    const pizzaName = 'small';
+    const expectedAction = {
+      type: 'TOGGLE_TOPPING_FROM_PIZZA',
+      toppingName,
+      pizzaName
+    };
+    expect(toggleTopping(pizzaName,toppingName)).toEqual(expectedAction);
   });
 });
