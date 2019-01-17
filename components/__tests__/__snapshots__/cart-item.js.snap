@@ -18,8 +18,20 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <p>
-          cart item
+        <p
+          className="pizzaName"
+        >
+          default pizza
+        </p>,
+        <p
+          className="pizzaMaxToppings"
+        >
+          0
+        </p>,
+        <p
+          className="pizzaBasePrice"
+        >
+          0
         </p>,
         <Button
           handleClick={[Function]}
@@ -34,10 +46,35 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "cart item",
+          "children": "default pizza",
+          "className": "pizzaName",
         },
         "ref": null,
-        "rendered": "cart item",
+        "rendered": "default pizza",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 0,
+          "className": "pizzaMaxToppings",
+        },
+        "ref": null,
+        "rendered": 0,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 0,
+          "className": "pizzaBasePrice",
+        },
+        "ref": null,
+        "rendered": 0,
         "type": "p",
       },
       Object {
@@ -62,8 +99,20 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <p>
-            cart item
+          <p
+            className="pizzaName"
+          >
+            default pizza
+          </p>,
+          <p
+            className="pizzaMaxToppings"
+          >
+            0
+          </p>,
+          <p
+            className="pizzaBasePrice"
+          >
+            0
           </p>,
           <Button
             handleClick={[Function]}
@@ -78,10 +127,35 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "cart item",
+            "children": "default pizza",
+            "className": "pizzaName",
           },
           "ref": null,
-          "rendered": "cart item",
+          "rendered": "default pizza",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0,
+            "className": "pizzaMaxToppings",
+          },
+          "ref": null,
+          "rendered": 0,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0,
+            "className": "pizzaBasePrice",
+          },
+          "ref": null,
+          "rendered": 0,
           "type": "p",
         },
         Object {
