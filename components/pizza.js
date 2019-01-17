@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import { addToCart } from '../actions';
 import Button from "./button";
+import Toppings from "./toppings";
 import { DEFAULT_PIZZA } from "../__mocks__";
 
 export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
@@ -10,6 +11,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
     <p className="pizzaName">{pizza.name}</p>
     <p className="pizzaMaxToppings">{pizza.maxToppings}</p>
     <p className="pizzaBasePrice">{pizza.basePrice}</p>
+    <Toppings toppings={pizza.toppings}/>
     <Button
       label={'add to cart'}
       handleClick={() => {handleAddToCart(pizza);}}

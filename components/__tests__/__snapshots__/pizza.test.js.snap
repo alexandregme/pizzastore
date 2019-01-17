@@ -33,6 +33,9 @@ ShallowWrapper {
         >
           0
         </p>,
+        <Toppings
+          toppings={Array []}
+        />,
         <Button
           handleClick={[Function]}
           label="add to cart"
@@ -82,6 +85,17 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "toppings": Array [],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
           "handleClick": [Function],
           "label": "add to cart",
         },
@@ -114,6 +128,9 @@ ShallowWrapper {
           >
             0
           </p>,
+          <Toppings
+            toppings={Array []}
+          />,
           <Button
             handleClick={[Function]}
             label="add to cart"
@@ -157,6 +174,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": 0,
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "toppings": Array [],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,

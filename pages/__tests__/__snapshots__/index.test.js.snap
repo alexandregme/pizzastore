@@ -26,13 +26,46 @@ ShallowWrapper {
                 "maxToppings": 3,
                 "name": "small",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
               Object {
@@ -40,13 +73,46 @@ ShallowWrapper {
                 "maxToppings": 5,
                 "name": "medium",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
               Object {
@@ -54,13 +120,46 @@ ShallowWrapper {
                 "maxToppings": null,
                 "name": "large",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
             ]
@@ -85,13 +184,46 @@ ShallowWrapper {
                   "maxToppings": 3,
                   "name": "small",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -99,13 +231,46 @@ ShallowWrapper {
                   "maxToppings": 5,
                   "name": "medium",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -113,13 +278,46 @@ ShallowWrapper {
                   "maxToppings": null,
                   "name": "large",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
               ]
@@ -141,13 +339,46 @@ ShallowWrapper {
                 "maxToppings": 3,
                 "name": "small",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
               Object {
@@ -155,13 +386,46 @@ ShallowWrapper {
                 "maxToppings": 5,
                 "name": "medium",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
               Object {
@@ -169,13 +433,46 @@ ShallowWrapper {
                 "maxToppings": null,
                 "name": "large",
                 "toppings": Array [
-                  "topping1",
-                  "topping2",
-                  "topping3",
-                  "topping4",
-                  "topping5",
-                  "topping6",
-                  "topping7",
+                  Object {
+                    "isChecked": true,
+                    "name": "topping 1",
+                    "price": 1,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 2",
+                    "price": 2,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 3",
+                    "price": 3,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 4",
+                    "price": 4,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 5",
+                    "price": 5,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 6",
+                    "price": 6,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 7",
+                    "price": 7,
+                  },
+                  Object {
+                    "isChecked": false,
+                    "name": "topping 8",
+                    "price": 8,
+                  },
                 ],
               },
             ],
@@ -213,13 +510,46 @@ ShallowWrapper {
                   "maxToppings": 3,
                   "name": "small",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -227,13 +557,46 @@ ShallowWrapper {
                   "maxToppings": 5,
                   "name": "medium",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -241,13 +604,46 @@ ShallowWrapper {
                   "maxToppings": null,
                   "name": "large",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
               ]
@@ -272,13 +668,46 @@ ShallowWrapper {
                     "maxToppings": 3,
                     "name": "small",
                     "toppings": Array [
-                      "topping1",
-                      "topping2",
-                      "topping3",
-                      "topping4",
-                      "topping5",
-                      "topping6",
-                      "topping7",
+                      Object {
+                        "isChecked": true,
+                        "name": "topping 1",
+                        "price": 1,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 2",
+                        "price": 2,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 3",
+                        "price": 3,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 4",
+                        "price": 4,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 5",
+                        "price": 5,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 6",
+                        "price": 6,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 7",
+                        "price": 7,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 8",
+                        "price": 8,
+                      },
                     ],
                   },
                   Object {
@@ -286,13 +715,46 @@ ShallowWrapper {
                     "maxToppings": 5,
                     "name": "medium",
                     "toppings": Array [
-                      "topping1",
-                      "topping2",
-                      "topping3",
-                      "topping4",
-                      "topping5",
-                      "topping6",
-                      "topping7",
+                      Object {
+                        "isChecked": true,
+                        "name": "topping 1",
+                        "price": 1,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 2",
+                        "price": 2,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 3",
+                        "price": 3,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 4",
+                        "price": 4,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 5",
+                        "price": 5,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 6",
+                        "price": 6,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 7",
+                        "price": 7,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 8",
+                        "price": 8,
+                      },
                     ],
                   },
                   Object {
@@ -300,13 +762,46 @@ ShallowWrapper {
                     "maxToppings": null,
                     "name": "large",
                     "toppings": Array [
-                      "topping1",
-                      "topping2",
-                      "topping3",
-                      "topping4",
-                      "topping5",
-                      "topping6",
-                      "topping7",
+                      Object {
+                        "isChecked": true,
+                        "name": "topping 1",
+                        "price": 1,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 2",
+                        "price": 2,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 3",
+                        "price": 3,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 4",
+                        "price": 4,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 5",
+                        "price": 5,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 6",
+                        "price": 6,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 7",
+                        "price": 7,
+                      },
+                      Object {
+                        "isChecked": false,
+                        "name": "topping 8",
+                        "price": 8,
+                      },
                     ],
                   },
                 ]
@@ -328,13 +823,46 @@ ShallowWrapper {
                   "maxToppings": 3,
                   "name": "small",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -342,13 +870,46 @@ ShallowWrapper {
                   "maxToppings": 5,
                   "name": "medium",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
                 Object {
@@ -356,13 +917,46 @@ ShallowWrapper {
                   "maxToppings": null,
                   "name": "large",
                   "toppings": Array [
-                    "topping1",
-                    "topping2",
-                    "topping3",
-                    "topping4",
-                    "topping5",
-                    "topping6",
-                    "topping7",
+                    Object {
+                      "isChecked": true,
+                      "name": "topping 1",
+                      "price": 1,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 2",
+                      "price": 2,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 3",
+                      "price": 3,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 4",
+                      "price": 4,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 5",
+                      "price": 5,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 6",
+                      "price": 6,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 7",
+                      "price": 7,
+                    },
+                    Object {
+                      "isChecked": false,
+                      "name": "topping 8",
+                      "price": 8,
+                    },
                   ],
                 },
               ],

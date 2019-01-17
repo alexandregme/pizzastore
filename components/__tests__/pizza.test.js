@@ -3,7 +3,9 @@ import { shallow } from 'enzyme';
 import expect from 'expect';
 import { Pizza } from '../pizza';
 import Button from "../button";
+import Toppings from "../toppings";
 import { CUSTOM_PIZZA } from "../../__mocks__";
+
 
 describe("Pizza", ()=>{
   let mountedPizza;
@@ -32,6 +34,10 @@ describe("Pizza", ()=>{
     let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
     expect(pizzaBasePriceValue.text()).toEqual("0");
+  });
+
+  it('expect to have Toppings component', () => {
+    expect(mountedPizza.find(Toppings)).toHaveLength(1);
   });
 
   it('expect to have Button component', () => {
