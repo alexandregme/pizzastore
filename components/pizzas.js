@@ -1,6 +1,7 @@
 import React from 'react';
 import Pizza from "./pizza";
 import PropTypes from "prop-types";
+import {connect} from "react-redux";
 
 const renderPizzas = pizzas => (
   pizzas.length > 0 ?
@@ -8,14 +9,20 @@ const renderPizzas = pizzas => (
     <span>No pizzas were found, plz come back soon.</span>
 );
 
-const Pizzas = ({pizzas = []}) => (
+export const Pizzas = ({pizzas = []}) => (
   <React.Fragment>
     {renderPizzas(pizzas)}
   </React.Fragment>
 );
 
 Pizzas.propTypes = {
-  pizzaSizes: PropTypes.array
+  pizzas: PropTypes.array
 };
 
-export default Pizzas;
+const mapStateToProps = state => ({
+  pizzas: state.pizzas
+});
+
+export default connect(
+  mapStateToProps
+)(Pizzas);

@@ -1,9 +1,18 @@
 import React from 'react';
 import expect from 'expect';
-import { addToCart, removeFromCart } from '../../actions';
-import { CUSTOM_PIZZA } from '../../__mocks__';
+import { addToCart, removeFromCart, fetchPizzas} from '../../actions';
+import { PIZZAS, CUSTOM_PIZZA} from '../../__mocks__';
 
 describe('Actions', () => {
+  it('should create an action to fetch pizzas', () => {
+    const pizzas = PIZZAS;
+    const expectedAction = {
+      type: 'FETCH_PIZZAS',
+      pizzas: PIZZAS
+    };
+    expect(fetchPizzas(pizzas)).toEqual(expectedAction);
+  });
+
   it('should create an action to add pizzas to cart', () => {
     const expectedAction = {
       type: 'ADD_TO_CART',

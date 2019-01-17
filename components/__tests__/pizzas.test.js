@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import Pizzas from '../pizzas';
+import { Pizzas } from '../pizzas';
 import Pizza from '../pizza';
 import { PIZZAS } from "../../__mocks__";
 

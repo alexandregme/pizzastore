@@ -5,8 +5,9 @@ import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
 import reducers from '../reducers';
 import Layout from "./layout";
+import { PIZZAS } from "../__mocks__";
 
-const store = createStore(reducers, composeWithDevTools(applyMiddleware()));
+const store = createStore(reducers,{pizzas:PIZZAS},composeWithDevTools(applyMiddleware()));
 
 const App = ({children, title}) => (
   <Provider store={store}>
