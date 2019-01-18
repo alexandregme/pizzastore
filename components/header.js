@@ -14,17 +14,25 @@ const LINKS = [
 const Header = () => (
     <React.Fragment>
         <header>
-            <nav>
-                {LINKS.map((link,i)=>
-                  (
-                    <Link
-                      key={link.path+i}
-                      href={link.path}
-                    >
-                        <a>{link.name}</a>
-                    </Link>
-                  )
-                )}
+            <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+              <div className="container">
+                <ul className=" nav navbar-nav flex-row">
+                  {LINKS.map((link,i)=>
+                    (
+                      <Link
+                        href={link.path}
+                        key={link.path+i}
+                      >
+                          <a
+                            className="nav-item nav-link"
+                          >
+                            {link.name}
+                          </a>
+                      </Link>
+                    )
+                  )}
+                </ul>
+              </div>
             </nav>
         </header>
     </React.Fragment>

@@ -8,7 +8,9 @@ const Layout = ({children, title}) => (
     <React.Fragment>
         <Head title={title}/>
         <Header/>
-        {children}
+        <div className="container">
+          {children}
+        </div>
     </React.Fragment>
 );
 
