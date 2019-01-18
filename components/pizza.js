@@ -5,11 +5,12 @@ import { addToCart } from '../actions';
 import Button from "./button";
 import Toppings from "./toppings";
 import { DEFAULT_PIZZA } from "../__mocks__";
+import PizzaSVG from '../svgs/pizza.svg'
 
 export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
   <React.Fragment>
-    <div className="card bg-inverse text-white">
-        <img className="card-img-top" src="#" alt="Card image cap" />
+    <div className="card bg-inverse text-white text-center">
+        <PizzaSVG className="pizzaSVG" />
         <div className="card-body">
           <h5 id="pizzaName" className="card-title">{pizza.name}</h5>
           <p id="pizzaMaxToppings" className="card-text">{pizza.maxToppings}</p>
