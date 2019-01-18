@@ -34,7 +34,6 @@ ShallowWrapper {
           0
         </p>,
         <Button
-          handleClick={[Function]}
           label="remove item"
         />,
       ],
@@ -82,7 +81,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleClick": [Function],
+          "handleClick": undefined,
           "label": "remove item",
         },
         "ref": null,
@@ -115,7 +114,6 @@ ShallowWrapper {
             0
           </p>,
           <Button
-            handleClick={[Function]}
             label="remove item"
           />,
         ],
@@ -163,7 +161,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleClick": [Function],
+            "handleClick": undefined,
             "label": "remove item",
           },
           "ref": null,
