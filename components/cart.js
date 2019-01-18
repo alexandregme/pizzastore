@@ -2,20 +2,22 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import CartItem from "./cart-item";
-
-const renderCartItems = cartItems => cartItems.map(
-  (item,id) =>{
-    return (<CartItem key={id} cartItem={item}/>);
-  }
-);
+import SummaryCart from "./summary-cart";
 
 export const Cart = ({cartItems = []}) => (
   <React.Fragment>
-    {cartItems.length > 0 ? (
-      renderCartItems(cartItems)
-    ) : (
-      <p>your cart is empty.</p>
-    )}
+    <div className="card container-cart">
+      <div className="card-header">
+        <SummaryCart/>
+      </div>
+      <div className="card-body">
+      {
+        cartItems.length > 0 ?
+        cartItems.map((item,id) => <CartItem key={id} cartItem={item}/>):
+        <h2>Your cart is empty, order some pizza :)</h2>
+      }
+      </div>
+    </div>
   </React.Fragment>
 );
 

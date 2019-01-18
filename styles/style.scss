@@ -25,14 +25,36 @@
   margin:10px;
 }
 
-.header-cart{
+.summary-cart{
+  display: flex;
+  p{
+    margin: 0 10px;
+  }
+}
+
+.header-summary{
   margin-left: auto;
-  .nav-link{
-    display: flex;
-    p{
-      margin-right: auto;
-      margin-left: 10px;
+}
+
+.container-cart{
+  margin-top:10px;
+  h2{
+    padding:10px;
+  }
+  .card{
+    padding: 0;
+    flex-direction: row;
+    .card-body{
+      display: flex;
+      .info{
+        padding:10px 0;
+      }
+      ul {
+        list-style-type: none;
+      }
+    }
+    div{
+      border: 0;
     }
   }
-
 }

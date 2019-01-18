@@ -28,7 +28,7 @@ const Header = () => (
                       </li>
                     )
                  )}
-                  <li className="nav-item header-cart">
+                  <li className="nav-item header-summary">
                     <SummaryCart className="nav-link navbar-brand"/>
                   </li>
                 </ul>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Pizza from "./pizza";
 import PropTypes from "prop-types";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
+import Pizza from "./pizza";
 
 export const Pizzas = ({pizzas = []}) => (
   <React.Fragment>
@@ -9,7 +9,7 @@ export const Pizzas = ({pizzas = []}) => (
       {
         pizzas.length > 0 ?
         pizzas.map((pizza,id) => <Pizza key={id} pizza={pizza}/>) :
-        <span>No pizzas were found, plz come back soon.</span>
+        <h2>No pizzas were found, plz come back soon.</h2>
       }
     </div>
   </React.Fragment>

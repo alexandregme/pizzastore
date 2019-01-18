@@ -20,9 +20,9 @@ ShallowWrapper {
       "children": <div
         className="card-deck"
       >
-        <span>
+        <h2>
           No pizzas were found, plz come back soon.
-        </span>
+        </h2>
       </div>,
     },
     "ref": null,
@@ -31,9 +31,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <span>
+        "children": <h2>
           No pizzas were found, plz come back soon.
-        </span>,
+        </h2>,
         "className": "card-deck",
       },
       "ref": null,
@@ -46,7 +46,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": "No pizzas were found, plz come back soon.",
-        "type": "span",
+        "type": "h2",
       },
       "type": "div",
     },
@@ -61,9 +61,9 @@ ShallowWrapper {
         "children": <div
           className="card-deck"
         >
-          <span>
+          <h2>
             No pizzas were found, plz come back soon.
-          </span>
+          </h2>
         </div>,
       },
       "ref": null,
@@ -72,9 +72,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <span>
+          "children": <h2>
             No pizzas were found, plz come back soon.
-          </span>,
+          </h2>,
           "className": "card-deck",
         },
         "ref": null,
@@ -87,7 +87,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "No pizzas were found, plz come back soon.",
-          "type": "span",
+          "type": "h2",
         },
         "type": "div",
       },

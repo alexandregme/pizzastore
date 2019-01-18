@@ -6,7 +6,6 @@ import Button from "../button";
 import Toppings from "../toppings";
 import { CUSTOM_PIZZA } from "../../__mocks__";
 
-
 describe("Pizza", ()=>{
   let mountedPizza;
   beforeEach(()=>{

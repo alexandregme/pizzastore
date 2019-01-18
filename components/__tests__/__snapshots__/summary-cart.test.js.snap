@@ -21,7 +21,7 @@ ShallowWrapper {
         <TotalItems />,
         <TotalCost />,
       ],
-      "className": undefined,
+      "className": "summary-cart undefined",
     },
     "ref": null,
     "rendered": Array [
@@ -60,7 +60,7 @@ ShallowWrapper {
           <TotalItems />,
           <TotalCost />,
         ],
-        "className": undefined,
+        "className": "summary-cart undefined",
       },
       "ref": null,
       "rendered": Array [

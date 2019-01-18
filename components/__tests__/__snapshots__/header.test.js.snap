@@ -54,7 +54,7 @@ ShallowWrapper {
                 </Link>
               </li>
               <li
-                className="nav-item header-cart"
+                className="nav-item header-summary"
               >
                 <Connect(SummaryCart)
                   className="nav-link navbar-brand"
@@ -107,7 +107,7 @@ ShallowWrapper {
                 </Link>
               </li>
               <li
-                className="nav-item header-cart"
+                className="nav-item header-summary"
               >
                 <Connect(SummaryCart)
                   className="nav-link navbar-brand"
@@ -156,7 +156,7 @@ ShallowWrapper {
                 </Link>
               </li>
               <li
-                className="nav-item header-cart"
+                className="nav-item header-summary"
               >
                 <Connect(SummaryCart)
                   className="nav-link navbar-brand"
@@ -202,7 +202,7 @@ ShallowWrapper {
                 </Link>
               </li>
               <li
-                className="nav-item header-cart"
+                className="nav-item header-summary"
               >
                 <Connect(SummaryCart)
                   className="nav-link navbar-brand"
@@ -247,7 +247,7 @@ ShallowWrapper {
                   </li>,
                 ],
                 <li
-                  className="nav-item header-cart"
+                  className="nav-item header-summary"
                 >
                   <Connect(SummaryCart)
                     className="nav-link navbar-brand"
@@ -358,7 +358,7 @@ ShallowWrapper {
                   "children": <Connect(SummaryCart)
                     className="nav-link navbar-brand"
                   />,
-                  "className": "nav-item header-cart",
+                  "className": "nav-item header-summary",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -428,7 +428,7 @@ ShallowWrapper {
                   </Link>
                 </li>
                 <li
-                  className="nav-item header-cart"
+                  className="nav-item header-summary"
                 >
                   <Connect(SummaryCart)
                     className="nav-link navbar-brand"
@@ -481,7 +481,7 @@ ShallowWrapper {
                   </Link>
                 </li>
                 <li
-                  className="nav-item header-cart"
+                  className="nav-item header-summary"
                 >
                   <Connect(SummaryCart)
                     className="nav-link navbar-brand"
@@ -530,7 +530,7 @@ ShallowWrapper {
                   </Link>
                 </li>
                 <li
-                  className="nav-item header-cart"
+                  className="nav-item header-summary"
                 >
                   <Connect(SummaryCart)
                     className="nav-link navbar-brand"
@@ -576,7 +576,7 @@ ShallowWrapper {
                   </Link>
                 </li>
                 <li
-                  className="nav-item header-cart"
+                  className="nav-item header-summary"
                 >
                   <Connect(SummaryCart)
                     className="nav-link navbar-brand"
@@ -621,7 +621,7 @@ ShallowWrapper {
                     </li>,
                   ],
                   <li
-                    className="nav-item header-cart"
+                    className="nav-item header-summary"
                   >
                     <Connect(SummaryCart)
                       className="nav-link navbar-brand"
@@ -732,7 +732,7 @@ ShallowWrapper {
                     "children": <Connect(SummaryCart)
                       className="nav-link navbar-brand"
                     />,
-                    "className": "nav-item header-cart",
+                    "className": "nav-item header-summary",
                   },
                   "ref": null,
                   "rendered": Object {

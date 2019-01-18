@@ -17,9 +17,22 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <p>
-        your cart is empty.
-      </p>,
+      "children": <div
+        className="card container-cart"
+      >
+        <div
+          className="card-header"
+        >
+          <Connect(SummaryCart) />
+        </div>
+        <div
+          className="card-body"
+        >
+          <h2>
+            Your cart is empty, order some pizza :)
+          </h2>
+        </div>
+      </div>,
     },
     "ref": null,
     "rendered": Object {
@@ -27,11 +40,70 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "your cart is empty.",
+        "children": Array [
+          <div
+            className="card-header"
+          >
+            <Connect(SummaryCart) />
+          </div>,
+          <div
+            className="card-body"
+          >
+            <h2>
+              Your cart is empty, order some pizza :)
+            </h2>
+          </div>,
+        ],
+        "className": "card container-cart",
       },
       "ref": null,
-      "rendered": "your cart is empty.",
-      "type": "p",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(SummaryCart) />,
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h2>
+              Your cart is empty, order some pizza :)
+            </h2>,
+            "className": "card-body",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Your cart is empty, order some pizza :)",
+            },
+            "ref": null,
+            "rendered": "Your cart is empty, order some pizza :)",
+            "type": "h2",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
     "type": Symbol(react.fragment),
   },
@@ -41,9 +113,22 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <p>
-          your cart is empty.
-        </p>,
+        "children": <div
+          className="card container-cart"
+        >
+          <div
+            className="card-header"
+          >
+            <Connect(SummaryCart) />
+          </div>
+          <div
+            className="card-body"
+          >
+            <h2>
+              Your cart is empty, order some pizza :)
+            </h2>
+          </div>
+        </div>,
       },
       "ref": null,
       "rendered": Object {
@@ -51,11 +136,70 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "your cart is empty.",
+          "children": Array [
+            <div
+              className="card-header"
+            >
+              <Connect(SummaryCart) />
+            </div>,
+            <div
+              className="card-body"
+            >
+              <h2>
+                Your cart is empty, order some pizza :)
+              </h2>
+            </div>,
+          ],
+          "className": "card container-cart",
         },
         "ref": null,
-        "rendered": "your cart is empty.",
-        "type": "p",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Connect(SummaryCart) />,
+              "className": "card-header",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h2>
+                Your cart is empty, order some pizza :)
+              </h2>,
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Your cart is empty, order some pizza :)",
+              },
+              "ref": null,
+              "rendered": "Your cart is empty, order some pizza :)",
+              "type": "h2",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
       "type": Symbol(react.fragment),
     },

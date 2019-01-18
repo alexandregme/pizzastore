@@ -17,7 +17,7 @@ describe("Pizzas", ()=>{
   });
 
   it('expect to show no pizzas found msg', () => {
-    let notFoundMsg = mountedPizzas.find('span');
+    let notFoundMsg = mountedPizzas.find('h2');
     expect(notFoundMsg).toHaveLength(1);
     expect(notFoundMsg.text()).toEqual('No pizzas were found, plz come back soon.');
   });
@@ -25,9 +25,7 @@ describe("Pizzas", ()=>{
 
 describe("Pizzas Custom component props", ()=>{
   let mountedPizzas;
-  let props = {
-    pizzas: PIZZAS
-  };
+  let props = { pizzas: PIZZAS };
 
   beforeEach(()=>{
     mountedPizzas = shallow(<Pizzas {...props} />);

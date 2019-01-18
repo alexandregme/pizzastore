@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import TotalItems from "./total-items";
 import TotalCost from "./total-cost";
-import PropTypes from "prop-types";
-import {connect} from "react-redux";
 
 export const SummaryCart = ({className,totalItems, totalCost}) =>(
-  <div className={className}>
+  <div className={`summary-cart ${className}`}>
     <TotalItems totalItems={totalItems}/>
     <TotalCost totalCost={totalCost}/>
   </div>
