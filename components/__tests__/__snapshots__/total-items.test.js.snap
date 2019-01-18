@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Total Cost renders without crashing 1`] = `
+exports[`Total Items renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <TotalCost />,
+  Symbol(enzyme.__unrendered__): <TotalItems />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,11 +17,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "total cost - $1000.00",
+      "children": Array [
+        "Total items - ",
+        0,
+      ],
       "className": undefined,
     },
     "ref": null,
-    "rendered": "total cost - $1000.00",
+    "rendered": Array [
+      "Total items - ",
+      0,
+    ],
     "type": "p",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -30,11 +36,17 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "total cost - $1000.00",
+        "children": Array [
+          "Total items - ",
+          0,
+        ],
         "className": undefined,
       },
       "ref": null,
-      "rendered": "total cost - $1000.00",
+      "rendered": Array [
+        "Total items - ",
+        0,
+      ],
       "type": "p",
     },
   ],

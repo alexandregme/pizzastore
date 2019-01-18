@@ -24,6 +24,7 @@ Checkbox.propTypes = {
   label: PropTypes.string,
   key: PropTypes.string,
   isChecked: PropTypes.bool,
+  isDisabled: PropTypes.bool,
   handleChange: PropTypes.func
 };
 

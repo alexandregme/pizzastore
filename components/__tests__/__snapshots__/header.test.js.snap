@@ -34,7 +34,7 @@ ShallowWrapper {
                   href="/"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Home
                   </a>
@@ -47,17 +47,17 @@ ShallowWrapper {
                   href="/cart"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Cart
                   </a>
                 </Link>
               </li>
               <li
-                className="nav-item mr-sm-2"
+                className="nav-item header-cart"
               >
-                <TotalCost
-                  className="nav-link"
+                <Connect(SummaryCart)
+                  className="nav-link navbar-brand"
                 />
               </li>
             </ul>
@@ -87,7 +87,7 @@ ShallowWrapper {
                   href="/"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Home
                   </a>
@@ -100,17 +100,17 @@ ShallowWrapper {
                   href="/cart"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Cart
                   </a>
                 </Link>
               </li>
               <li
-                className="nav-item mr-sm-2"
+                className="nav-item header-cart"
               >
-                <TotalCost
-                  className="nav-link"
+                <Connect(SummaryCart)
+                  className="nav-link navbar-brand"
                 />
               </li>
             </ul>
@@ -136,7 +136,7 @@ ShallowWrapper {
                   href="/"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Home
                   </a>
@@ -149,17 +149,17 @@ ShallowWrapper {
                   href="/cart"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Cart
                   </a>
                 </Link>
               </li>
               <li
-                className="nav-item mr-sm-2"
+                className="nav-item header-cart"
               >
-                <TotalCost
-                  className="nav-link"
+                <Connect(SummaryCart)
+                  className="nav-link navbar-brand"
                 />
               </li>
             </ul>
@@ -182,7 +182,7 @@ ShallowWrapper {
                   href="/"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Home
                   </a>
@@ -195,17 +195,17 @@ ShallowWrapper {
                   href="/cart"
                 >
                   <a
-                    className="nav-link"
+                    className="nav-link navbar-brand"
                   >
                     Cart
                   </a>
                 </Link>
               </li>
               <li
-                className="nav-item mr-sm-2"
+                className="nav-item header-cart"
               >
-                <TotalCost
-                  className="nav-link"
+                <Connect(SummaryCart)
+                  className="nav-link navbar-brand"
                 />
               </li>
             </ul>,
@@ -226,7 +226,7 @@ ShallowWrapper {
                       href="/"
                     >
                       <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Home
                       </a>
@@ -239,7 +239,7 @@ ShallowWrapper {
                       href="/cart"
                     >
                       <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Cart
                       </a>
@@ -247,10 +247,10 @@ ShallowWrapper {
                   </li>,
                 ],
                 <li
-                  className="nav-item mr-sm-2"
+                  className="nav-item header-cart"
                 >
-                  <TotalCost
-                    className="nav-link"
+                  <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />
                 </li>,
               ],
@@ -267,7 +267,7 @@ ShallowWrapper {
                     href="/"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>
@@ -281,7 +281,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>,
@@ -294,7 +294,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Home",
-                      "className": "nav-link",
+                      "className": "nav-link navbar-brand",
                     },
                     "ref": null,
                     "rendered": "Home",
@@ -313,7 +313,7 @@ ShallowWrapper {
                     href="/cart"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>
@@ -327,7 +327,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "children": <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>,
@@ -340,7 +340,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "Cart",
-                      "className": "nav-link",
+                      "className": "nav-link navbar-brand",
                     },
                     "ref": null,
                     "rendered": "Cart",
@@ -355,18 +355,18 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <TotalCost
-                    className="nav-link"
+                  "children": <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />,
-                  "className": "nav-item mr-sm-2",
+                  "className": "nav-item header-cart",
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "function",
+                  "nodeType": "class",
                   "props": Object {
-                    "className": "nav-link",
+                    "className": "nav-link navbar-brand",
                   },
                   "ref": null,
                   "rendered": null,
@@ -408,7 +408,7 @@ ShallowWrapper {
                     href="/"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>
@@ -421,17 +421,17 @@ ShallowWrapper {
                     href="/cart"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>
                   </Link>
                 </li>
                 <li
-                  className="nav-item mr-sm-2"
+                  className="nav-item header-cart"
                 >
-                  <TotalCost
-                    className="nav-link"
+                  <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />
                 </li>
               </ul>
@@ -461,7 +461,7 @@ ShallowWrapper {
                     href="/"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>
@@ -474,17 +474,17 @@ ShallowWrapper {
                     href="/cart"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>
                   </Link>
                 </li>
                 <li
-                  className="nav-item mr-sm-2"
+                  className="nav-item header-cart"
                 >
-                  <TotalCost
-                    className="nav-link"
+                  <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />
                 </li>
               </ul>
@@ -510,7 +510,7 @@ ShallowWrapper {
                     href="/"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>
@@ -523,17 +523,17 @@ ShallowWrapper {
                     href="/cart"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>
                   </Link>
                 </li>
                 <li
-                  className="nav-item mr-sm-2"
+                  className="nav-item header-cart"
                 >
-                  <TotalCost
-                    className="nav-link"
+                  <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />
                 </li>
               </ul>
@@ -556,7 +556,7 @@ ShallowWrapper {
                     href="/"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Home
                     </a>
@@ -569,17 +569,17 @@ ShallowWrapper {
                     href="/cart"
                   >
                     <a
-                      className="nav-link"
+                      className="nav-link navbar-brand"
                     >
                       Cart
                     </a>
                   </Link>
                 </li>
                 <li
-                  className="nav-item mr-sm-2"
+                  className="nav-item header-cart"
                 >
-                  <TotalCost
-                    className="nav-link"
+                  <Connect(SummaryCart)
+                    className="nav-link navbar-brand"
                   />
                 </li>
               </ul>,
@@ -600,7 +600,7 @@ ShallowWrapper {
                         href="/"
                       >
                         <a
-                          className="nav-link"
+                          className="nav-link navbar-brand"
                         >
                           Home
                         </a>
@@ -613,7 +613,7 @@ ShallowWrapper {
                         href="/cart"
                       >
                         <a
-                          className="nav-link"
+                          className="nav-link navbar-brand"
                         >
                           Cart
                         </a>
@@ -621,10 +621,10 @@ ShallowWrapper {
                     </li>,
                   ],
                   <li
-                    className="nav-item mr-sm-2"
+                    className="nav-item header-cart"
                   >
-                    <TotalCost
-                      className="nav-link"
+                    <Connect(SummaryCart)
+                      className="nav-link navbar-brand"
                     />
                   </li>,
                 ],
@@ -641,7 +641,7 @@ ShallowWrapper {
                       href="/"
                     >
                       <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Home
                       </a>
@@ -655,7 +655,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Home
                       </a>,
@@ -668,7 +668,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": "Home",
-                        "className": "nav-link",
+                        "className": "nav-link navbar-brand",
                       },
                       "ref": null,
                       "rendered": "Home",
@@ -687,7 +687,7 @@ ShallowWrapper {
                       href="/cart"
                     >
                       <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Cart
                       </a>
@@ -701,7 +701,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "children": <a
-                        className="nav-link"
+                        className="nav-link navbar-brand"
                       >
                         Cart
                       </a>,
@@ -714,7 +714,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": "Cart",
-                        "className": "nav-link",
+                        "className": "nav-link navbar-brand",
                       },
                       "ref": null,
                       "rendered": "Cart",
@@ -729,18 +729,18 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": <TotalCost
-                      className="nav-link"
+                    "children": <Connect(SummaryCart)
+                      className="nav-link navbar-brand"
                     />,
-                    "className": "nav-item mr-sm-2",
+                    "className": "nav-item header-cart",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "function",
+                    "nodeType": "class",
                     "props": Object {
-                      "className": "nav-link",
+                      "className": "nav-link navbar-brand",
                     },
                     "ref": null,
                     "rendered": null,

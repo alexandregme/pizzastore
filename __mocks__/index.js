@@ -1,3 +1,13 @@
+export const LINKS = [
+  {
+    name:'Home',
+    path:'/'
+  },{
+    name:'Cart',
+    path:'/cart'
+  }
+];
+
 export const TOPPINGS = [{
   name:"topping 1",
   price:1,

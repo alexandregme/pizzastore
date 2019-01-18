@@ -25,8 +25,4 @@ describe("Index page", ()=>{
     it('expect to have Pizzas component', () => {
       expect(mountedIndexPage.find(Pizzas)).toHaveLength(1);
     });
-
-    it('expect to have Cart component', () => {
-      expect(mountedIndexPage.find(Cart)).toHaveLength(1);
-    });
 });

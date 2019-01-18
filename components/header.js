@@ -1,16 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import TotalCost from './totalcost';
-
-const LINKS = [
-    {
-        name:'Home',
-        path:'/'
-    },{
-        name:'Cart',
-        path:'/cart'
-    }
-];
+import SummaryCart from './summary-cart';
+import { LINKS } from "../__mocks__";
 
 const Header = () => (
     <React.Fragment>
@@ -29,7 +20,7 @@ const Header = () => (
 
                         >
                             <a
-                              className="nav-link"
+                              className="nav-link navbar-brand"
                             >
                               {link.name}
                             </a>
@@ -37,8 +28,8 @@ const Header = () => (
                       </li>
                     )
                  )}
-                  <li className="nav-item mr-sm-2">
-                    <TotalCost className="nav-link"/>
+                  <li className="nav-item header-cart">
+                    <SummaryCart className="nav-link navbar-brand"/>
                   </li>
                 </ul>
               </div>

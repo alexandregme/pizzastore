@@ -29,15 +29,25 @@ describe('cart reducer', () => {
   it('should handle ADD_TO_CART with deepFreeze mutation', () => {
 
     cartBefore = [];
-    cartAfter = [{"id": 0, ...CUSTOM_PIZZA}];
+    cartAfter = {
+      items:[{"id": 0, ...CUSTOM_PIZZA}],
+      totalCost:1,
+      totalItems:1
+    };
 
     deepFreeze(cartBefore);
     deepFreeze(actionAddSmallPizza);
 
     expect(cart(cartBefore, actionAddSmallPizza)).toEqual(cartAfter);
 
-    cartBefore = [{"id": 0, ...CUSTOM_PIZZA}];
-    cartAfter = [{"id": 0, ...CUSTOM_PIZZA}, {"id": 1, ...CUSTOM_PIZZA}];
+    cartBefore = {
+      items: [{"id": 0, ...CUSTOM_PIZZA}]
+    };
+    cartAfter = {
+      items: [{"id": 0, ...CUSTOM_PIZZA}, {"id": 1, ...CUSTOM_PIZZA}],
+      totalCost:2,
+      totalItems:2
+    };
 
     deepFreeze(cartBefore);
     deepFreeze(actionAddLargePizza);
@@ -47,7 +57,7 @@ describe('cart reducer', () => {
   it('should handle REMOVE_FROM_CART with deepFreeze mutation', () => {
 
     cartBefore = [{id:1, pizzaSize: 'SMALL'}];
-    cartAfter = [];
+    cartAfter = {items: [], totalCost: 0, totalItems: 0};
 
     deepFreeze(cartBefore);
     deepFreeze(actionRemoveById);

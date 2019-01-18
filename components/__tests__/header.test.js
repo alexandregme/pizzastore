@@ -2,8 +2,8 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import expect from 'expect';
 import Header from '../header';
-import TotalCost from "../totalcost";
-
+import SummaryCart from "../summary-cart";
+-
 describe("Head", ()=>{
     let mountedHeader;
 
@@ -32,7 +32,7 @@ describe("Head", ()=>{
         expect(mountedHeader.find('Link[href="/cart"]')).toHaveLength(1);
     });
 
-    it('expect to have TotalCost component', () => {
-      expect(mountedHeader.find(TotalCost)).toHaveLength(1);
+    it('expect to have SummaryCart component', () => {
+      expect(mountedHeader.find(SummaryCart)).toHaveLength(1);
     });
 });

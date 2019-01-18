@@ -2,7 +2,7 @@ import React from 'react';
 import Topping from './topping';
 import PropTypes from "prop-types";
 
-const Toppings = ({toppings = [], pizzaName = 'default pizza', disabledToppings=false}) => (
+const Toppings = ({toppings = [], pizzaName = 'default pizza', disabledToppings = false}) => (
   <React.Fragment>
     <div>
       {
@@ -16,7 +16,8 @@ const Toppings = ({toppings = [], pizzaName = 'default pizza', disabledToppings=
 
 Toppings.propTypes = {
   toppings: PropTypes.array,
-  pizzaName: PropTypes.string
+  pizzaName: PropTypes.string,
+  disabledToppings:  PropTypes.bool,
 };
 
 export default Toppings;

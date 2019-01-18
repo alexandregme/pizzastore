@@ -17,3 +17,15 @@
   width: 100px;
   margin:10px;
 }
+
+.header-cart{
+  margin-left: auto;
+  .nav-link{
+    display: flex;
+    p{
+      margin-right: auto;
+      margin-left: 10px;
+    }
+  }
+
+}

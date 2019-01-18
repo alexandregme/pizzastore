@@ -24,7 +24,7 @@ Cart.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  cartItems: state.cart
+  cartItems: state.cart.items
 });
 
 export default connect(
