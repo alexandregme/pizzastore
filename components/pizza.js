@@ -8,14 +8,20 @@ import { DEFAULT_PIZZA } from "../__mocks__";
 
 export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
   <React.Fragment>
-    <p className="pizzaName">{pizza.name}</p>
-    <p className="pizzaMaxToppings">{pizza.maxToppings}</p>
-    <p className="pizzaBasePrice">{pizza.basePrice}</p>
-    <Toppings toppings={pizza.toppings} pizzaName={pizza.name}/>
-    <Button
-      label={'add to cart'}
-      handleClick={() => {handleAddToCart(pizza);}}
-    />
+    <div className="card bg-inverse text-white">
+        <img className="card-img-top" src="#" alt="Card image cap" />
+        <div className="card-body">
+          <h5 id="pizzaName" className="card-title">{pizza.name}</h5>
+          <p id="pizzaMaxToppings" className="card-text">{pizza.maxToppings}</p>
+          <p id="pizzaBasePrice" className="card-text">{pizza.basePrice}</p>
+          <Toppings toppings={pizza.toppings} pizzaName={pizza.name}/>
+          <Button
+            label={'add to cart'}
+            className="btn btn-primary"
+            handleClick={() => {handleAddToCart(pizza);}}
+          />
+        </div>
+    </div>
   </React.Fragment>
 );
 

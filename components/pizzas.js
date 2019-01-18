@@ -11,7 +11,9 @@ const renderPizzas = pizzas => (
 
 export const Pizzas = ({pizzas = []}) => (
   <React.Fragment>
-    {renderPizzas(pizzas)}
+    <div className="card-deck">
+      {renderPizzas(pizzas)}
+    </div>
   </React.Fragment>
 );
 
