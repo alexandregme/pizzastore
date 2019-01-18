@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import reducers from '../reducers';
 import Layout from "./layout";
 import { PIZZAS } from "../__mocks__";
+import '../styles/style.scss'
 
 const store = createStore(reducers,{pizzas:PIZZAS},composeWithDevTools(applyMiddleware()));
 
