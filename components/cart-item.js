@@ -23,7 +23,7 @@ export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart}) =>(
           <ul>{
             cartItem.toppings
             .filter(topping => topping.isChecked)
-            .map(topping => <li>{topping.name} - ${topping.price}</li>)
+            .map((topping,id) => <li key={id}>{topping.name} - ${topping.price}</li>)
           }</ul>
         </div>
       </div>
