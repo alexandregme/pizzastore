@@ -10,7 +10,9 @@ const renderToppings = (toppings, pizzaName) => (
 
 const Toppings = ({toppings = [], pizzaName='default pizza'}) => (
   <React.Fragment>
-    {renderToppings(toppings, pizzaName)}
+    <div>
+      {renderToppings(toppings, pizzaName)}
+    </div>
   </React.Fragment>
 );
 

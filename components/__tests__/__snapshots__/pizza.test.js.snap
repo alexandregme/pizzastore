@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div
-        className="card bg-inverse text-white text-center"
+        className="card bg-inverse text-white text-center mb-3"
       >
         <PizzaSVG
           className="pizzaSVG"
@@ -32,18 +32,21 @@ ShallowWrapper {
             className="card-title"
             id="pizzaName"
           >
+            Pizza size - 
             default pizza
           </h5>
           <p
             className="card-text"
             id="pizzaMaxToppings"
           >
-            0
+            Max Toppings - 
+            unlimited toppings!
           </p>
           <p
             className="card-text"
             id="pizzaBasePrice"
           >
+            Price - $
             0
           </p>
           <Toppings
@@ -77,18 +80,21 @@ ShallowWrapper {
               className="card-title"
               id="pizzaName"
             >
+              Pizza size - 
               default pizza
             </h5>
             <p
               className="card-text"
               id="pizzaMaxToppings"
             >
-              0
+              Max Toppings - 
+              unlimited toppings!
             </p>
             <p
               className="card-text"
               id="pizzaBasePrice"
             >
+              Price - $
               0
             </p>
             <Toppings
@@ -102,7 +108,7 @@ ShallowWrapper {
             />
           </div>,
         ],
-        "className": "card bg-inverse text-white text-center",
+        "className": "card bg-inverse text-white text-center mb-3",
       },
       "ref": null,
       "rendered": Array [
@@ -129,18 +135,21 @@ ShallowWrapper {
                 className="card-title"
                 id="pizzaName"
               >
+                Pizza size - 
                 default pizza
               </h5>,
               <p
                 className="card-text"
                 id="pizzaMaxToppings"
               >
-                0
+                Max Toppings - 
+                unlimited toppings!
               </p>,
               <p
                 className="card-text"
                 id="pizzaBasePrice"
               >
+                Price - $
                 0
               </p>,
               <Toppings
@@ -162,12 +171,18 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "default pizza",
+                "children": Array [
+                  "Pizza size - ",
+                  "default pizza",
+                ],
                 "className": "card-title",
                 "id": "pizzaName",
               },
               "ref": null,
-              "rendered": "default pizza",
+              "rendered": Array [
+                "Pizza size - ",
+                "default pizza",
+              ],
               "type": "h5",
             },
             Object {
@@ -175,12 +190,18 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 0,
+                "children": Array [
+                  "Max Toppings - ",
+                  "unlimited toppings!",
+                ],
                 "className": "card-text",
                 "id": "pizzaMaxToppings",
               },
               "ref": null,
-              "rendered": 0,
+              "rendered": Array [
+                "Max Toppings - ",
+                "unlimited toppings!",
+              ],
               "type": "p",
             },
             Object {
@@ -188,12 +209,18 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 0,
+                "children": Array [
+                  "Price - $",
+                  0,
+                ],
                 "className": "card-text",
                 "id": "pizzaBasePrice",
               },
               "ref": null,
-              "rendered": 0,
+              "rendered": Array [
+                "Price - $",
+                0,
+              ],
               "type": "p",
             },
             Object {
@@ -236,7 +263,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
-          className="card bg-inverse text-white text-center"
+          className="card bg-inverse text-white text-center mb-3"
         >
           <PizzaSVG
             className="pizzaSVG"
@@ -250,18 +277,21 @@ ShallowWrapper {
               className="card-title"
               id="pizzaName"
             >
+              Pizza size - 
               default pizza
             </h5>
             <p
               className="card-text"
               id="pizzaMaxToppings"
             >
-              0
+              Max Toppings - 
+              unlimited toppings!
             </p>
             <p
               className="card-text"
               id="pizzaBasePrice"
             >
+              Price - $
               0
             </p>
             <Toppings
@@ -295,18 +325,21 @@ ShallowWrapper {
                 className="card-title"
                 id="pizzaName"
               >
+                Pizza size - 
                 default pizza
               </h5>
               <p
                 className="card-text"
                 id="pizzaMaxToppings"
               >
-                0
+                Max Toppings - 
+                unlimited toppings!
               </p>
               <p
                 className="card-text"
                 id="pizzaBasePrice"
               >
+                Price - $
                 0
               </p>
               <Toppings
@@ -320,7 +353,7 @@ ShallowWrapper {
               />
             </div>,
           ],
-          "className": "card bg-inverse text-white text-center",
+          "className": "card bg-inverse text-white text-center mb-3",
         },
         "ref": null,
         "rendered": Array [
@@ -347,18 +380,21 @@ ShallowWrapper {
                   className="card-title"
                   id="pizzaName"
                 >
+                  Pizza size - 
                   default pizza
                 </h5>,
                 <p
                   className="card-text"
                   id="pizzaMaxToppings"
                 >
-                  0
+                  Max Toppings - 
+                  unlimited toppings!
                 </p>,
                 <p
                   className="card-text"
                   id="pizzaBasePrice"
                 >
+                  Price - $
                   0
                 </p>,
                 <Toppings
@@ -380,12 +416,18 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "default pizza",
+                  "children": Array [
+                    "Pizza size - ",
+                    "default pizza",
+                  ],
                   "className": "card-title",
                   "id": "pizzaName",
                 },
                 "ref": null,
-                "rendered": "default pizza",
+                "rendered": Array [
+                  "Pizza size - ",
+                  "default pizza",
+                ],
                 "type": "h5",
               },
               Object {
@@ -393,12 +435,18 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": 0,
+                  "children": Array [
+                    "Max Toppings - ",
+                    "unlimited toppings!",
+                  ],
                   "className": "card-text",
                   "id": "pizzaMaxToppings",
                 },
                 "ref": null,
-                "rendered": 0,
+                "rendered": Array [
+                  "Max Toppings - ",
+                  "unlimited toppings!",
+                ],
                 "type": "p",
               },
               Object {
@@ -406,12 +454,18 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": 0,
+                  "children": Array [
+                    "Price - $",
+                    0,
+                  ],
                   "className": "card-text",
                   "id": "pizzaBasePrice",
                 },
                 "ref": null,
-                "rendered": 0,
+                "rendered": Array [
+                  "Price - $",
+                  0,
+                ],
                 "type": "p",
               },
               Object {

@@ -17,49 +17,73 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <input
-          checked={false}
-          id="checkbox_21728090788264964"
-          onChange={[Function]}
-          type="checkbox"
-        />,
-        <label
-          htmlFor="checkbox_21728090788264964"
-        >
+      "children": <div
+        className="input-group-text"
+      >
+        <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
           default label
-        </label>,
-      ],
+        </label>
+      </div>,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "checked": false,
-          "id": "checkbox_21728090788264964",
-          "onChange": [Function],
-          "type": "checkbox",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <label>
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          default label
+        </label>,
+        "className": "input-group-text",
       },
-      Object {
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "default label",
-          "htmlFor": "checkbox_21728090788264964",
+          "children": Array [
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />,
+            "default label",
+          ],
+          "htmlFor": undefined,
         },
         "ref": null,
-        "rendered": "default label",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "checked": false,
+              "id": undefined,
+              "onChange": [Function],
+              "type": "checkbox",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "default label",
+        ],
         "type": "label",
       },
-    ],
+      "type": "div",
+    },
     "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
@@ -68,49 +92,73 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <input
-            checked={false}
-            id="checkbox_21728090788264964"
-            onChange={[Function]}
-            type="checkbox"
-          />,
-          <label
-            htmlFor="checkbox_21728090788264964"
-          >
+        "children": <div
+          className="input-group-text"
+        >
+          <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
             default label
-          </label>,
-        ],
+          </label>
+        </div>,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "checked": false,
-            "id": "checkbox_21728090788264964",
-            "onChange": [Function],
-            "type": "checkbox",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <label>
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            default label
+          </label>,
+          "className": "input-group-text",
         },
-        Object {
+        "ref": null,
+        "rendered": Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "default label",
-            "htmlFor": "checkbox_21728090788264964",
+            "children": Array [
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              "default label",
+            ],
+            "htmlFor": undefined,
           },
           "ref": null,
-          "rendered": "default label",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "id": undefined,
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            "default label",
+          ],
           "type": "label",
         },
-      ],
+        "type": "div",
+      },
       "type": Symbol(react.fragment),
     },
   ],

@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <Checkbox
         isChecked={false}
-        label="default topping-0"
+        label=" default topping - $0"
       />,
     },
     "ref": null,
@@ -30,7 +30,7 @@ ShallowWrapper {
       "props": Object {
         "handleChange": undefined,
         "isChecked": false,
-        "label": "default topping-0",
+        "label": " default topping - $0",
       },
       "ref": null,
       "rendered": null,
@@ -46,7 +46,7 @@ ShallowWrapper {
       "props": Object {
         "children": <Checkbox
           isChecked={false}
-          label="default topping-0"
+          label=" default topping - $0"
         />,
       },
       "ref": null,
@@ -57,7 +57,7 @@ ShallowWrapper {
         "props": Object {
           "handleChange": undefined,
           "isChecked": false,
-          "label": "default topping-0",
+          "label": " default topping - $0",
         },
         "ref": null,
         "rendered": null,

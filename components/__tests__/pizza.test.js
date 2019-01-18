@@ -21,19 +21,19 @@ describe("Pizza", ()=>{
   it('expect to have default value for pizza name', () => {
     let pizzaNameValue = mountedPizza.find('h5#pizzaName');
     expect(pizzaNameValue).toHaveLength(1);
-    expect(pizzaNameValue.text()).toEqual('default pizza');
+    expect(pizzaNameValue.text()).toEqual('Pizza size - default pizza');
   });
 
   it('expect to have default value for pizza max toppings', () => {
     let pizzaMaxToppingValue = mountedPizza.find('p#pizzaMaxToppings');
     expect(pizzaMaxToppingValue).toHaveLength(1);
-    expect(pizzaMaxToppingValue.text()).toEqual("0");
+    expect(pizzaMaxToppingValue.text()).toEqual("Max Toppings - unlimited toppings!");
   });
 
   it('expect to have default value for base price', () => {
     let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
-    expect(pizzaBasePriceValue.text()).toEqual("0");
+    expect(pizzaBasePriceValue.text()).toEqual("Price - $0");
   });
 
   it('expect to have Toppings component', () => {
@@ -56,18 +56,18 @@ describe("Pizza Custom component props", ()=>{
   it('expect to have default value for pizza name', () => {
     let pizzaNameValue = mountedPizza.find('h5#pizzaName');
     expect(pizzaNameValue).toHaveLength(1);
-    expect(pizzaNameValue.text()).toEqual('custom pizza');
+    expect(pizzaNameValue.text()).toEqual('Pizza size - custom pizza');
   });
 
   it('expect to have default value for pizza max toppings', () => {
     let pizzaMaxToppingValue = mountedPizza.find('p#pizzaMaxToppings');
     expect(pizzaMaxToppingValue).toHaveLength(1);
-    expect(pizzaMaxToppingValue.text()).toEqual("1");
+    expect(pizzaMaxToppingValue.text()).toEqual("Max Toppings - 1");
   });
 
   it('expect to have default value for base price', () => {
     let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
-    expect(pizzaBasePriceValue.text()).toEqual("1");
+    expect(pizzaBasePriceValue.text()).toEqual("Price - $1");
   });
 });

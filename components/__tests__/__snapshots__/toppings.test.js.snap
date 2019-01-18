@@ -17,29 +17,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <p>
-        There are no toppings available for this pizza.
-      </p>,
+      "children": <div>
+        <p>
+          There are no toppings available for this pizza.
+        </p>
+      </div>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
-      "props": Object {
-        "children": "There are no toppings available for this pizza.",
-      },
-      "ref": null,
-      "rendered": "There are no toppings available for this pizza.",
-      "type": "p",
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
       "props": Object {
         "children": <p>
           There are no toppings available for this pizza.
@@ -56,6 +44,46 @@ ShallowWrapper {
         "ref": null,
         "rendered": "There are no toppings available for this pizza.",
         "type": "p",
+      },
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div>
+          <p>
+            There are no toppings available for this pizza.
+          </p>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            There are no toppings available for this pizza.
+          </p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "There are no toppings available for this pizza.",
+          },
+          "ref": null,
+          "rendered": "There are no toppings available for this pizza.",
+          "type": "p",
+        },
+        "type": "div",
       },
       "type": Symbol(react.fragment),
     },
