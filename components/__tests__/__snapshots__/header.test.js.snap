@@ -27,24 +27,39 @@ ShallowWrapper {
             <ul
               className=" nav navbar-nav flex-row"
             >
-              <Link
-                href="/"
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/"
                 >
-                  Home
-                </a>
-              </Link>
-              <Link
-                href="/cart"
+                  <a
+                    className="nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/cart"
                 >
-                  Cart
-                </a>
-              </Link>
+                  <a
+                    className="nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item mr-sm-2"
+              >
+                <TotalCost
+                  className="nav-link"
+                />
+              </li>
             </ul>
           </div>
         </nav>
@@ -65,24 +80,39 @@ ShallowWrapper {
             <ul
               className=" nav navbar-nav flex-row"
             >
-              <Link
-                href="/"
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/"
                 >
-                  Home
-                </a>
-              </Link>
-              <Link
-                href="/cart"
+                  <a
+                    className="nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/cart"
                 >
-                  Cart
-                </a>
-              </Link>
+                  <a
+                    className="nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item mr-sm-2"
+              >
+                <TotalCost
+                  className="nav-link"
+                />
+              </li>
             </ul>
           </div>
         </nav>,
@@ -99,24 +129,39 @@ ShallowWrapper {
             <ul
               className=" nav navbar-nav flex-row"
             >
-              <Link
-                href="/"
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/"
                 >
-                  Home
-                </a>
-              </Link>
-              <Link
-                href="/cart"
+                  <a
+                    className="nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/cart"
                 >
-                  Cart
-                </a>
-              </Link>
+                  <a
+                    className="nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item mr-sm-2"
+              >
+                <TotalCost
+                  className="nav-link"
+                />
+              </li>
             </ul>
           </div>,
           "className": "navbar navbar-expand-lg navbar-light bg-warning",
@@ -130,24 +175,39 @@ ShallowWrapper {
             "children": <ul
               className=" nav navbar-nav flex-row"
             >
-              <Link
-                href="/"
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/"
                 >
-                  Home
-                </a>
-              </Link>
-              <Link
-                href="/cart"
+                  <a
+                    className="nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item"
               >
-                <a
-                  className="nav-item nav-link"
+                <Link
+                  href="/cart"
                 >
-                  Cart
-                </a>
-              </Link>
+                  <a
+                    className="nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </li>
+              <li
+                className="nav-item mr-sm-2"
+              >
+                <TotalCost
+                  className="nav-link"
+                />
+              </li>
             </ul>,
             "className": "container",
           },
@@ -158,24 +218,41 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <Link
-                  href="/"
-                >
-                  <a
-                    className="nav-item nav-link"
+                Array [
+                  <li
+                    className="nav-item"
                   >
-                    Home
-                  </a>
-                </Link>,
-                <Link
-                  href="/cart"
-                >
-                  <a
-                    className="nav-item nav-link"
+                    <Link
+                      href="/"
+                    >
+                      <a
+                        className="nav-link"
+                      >
+                        Home
+                      </a>
+                    </Link>
+                  </li>,
+                  <li
+                    className="nav-item"
                   >
-                    Cart
-                  </a>
-                </Link>,
+                    <Link
+                      href="/cart"
+                    >
+                      <a
+                        className="nav-link"
+                      >
+                        Cart
+                      </a>
+                    </Link>
+                  </li>,
+                ],
+                <li
+                  className="nav-item mr-sm-2"
+                >
+                  <TotalCost
+                    className="nav-link"
+                  />
+                </li>,
               ],
               "className": " nav navbar-nav flex-row",
             },
@@ -184,56 +261,118 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": "/0",
-                "nodeType": "class",
+                "nodeType": "host",
                 "props": Object {
-                  "children": <a
-                    className="nav-item nav-link"
+                  "children": <Link
+                    href="/"
                   >
-                    Home
-                  </a>,
-                  "href": "/",
+                    <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>,
+                  "className": "nav-item",
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
-                    "children": "Home",
-                    "className": "nav-item nav-link",
+                    "children": <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>,
+                    "href": "/",
                   },
                   "ref": null,
-                  "rendered": "Home",
-                  "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Home",
+                      "className": "nav-link",
+                    },
+                    "ref": null,
+                    "rendered": "Home",
+                    "type": "a",
+                  },
+                  "type": [Function],
                 },
-                "type": [Function],
+                "type": "li",
               },
               Object {
                 "instance": null,
                 "key": "/cart1",
-                "nodeType": "class",
+                "nodeType": "host",
                 "props": Object {
-                  "children": <a
-                    className="nav-item nav-link"
+                  "children": <Link
+                    href="/cart"
                   >
-                    Cart
-                  </a>,
-                  "href": "/cart",
+                    <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>,
+                  "className": "nav-item",
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
-                    "children": "Cart",
-                    "className": "nav-item nav-link",
+                    "children": <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>,
+                    "href": "/cart",
                   },
                   "ref": null,
-                  "rendered": "Cart",
-                  "type": "a",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Cart",
+                      "className": "nav-link",
+                    },
+                    "ref": null,
+                    "rendered": "Cart",
+                    "type": "a",
+                  },
+                  "type": [Function],
                 },
-                "type": [Function],
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <TotalCost
+                    className="nav-link"
+                  />,
+                  "className": "nav-item mr-sm-2",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "nav-link",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
               },
             ],
             "type": "ul",
@@ -262,24 +401,39 @@ ShallowWrapper {
               <ul
                 className=" nav navbar-nav flex-row"
               >
-                <Link
-                  href="/"
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/"
                   >
-                    Home
-                  </a>
-                </Link>
-                <Link
-                  href="/cart"
+                    <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/cart"
                   >
-                    Cart
-                  </a>
-                </Link>
+                    <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item mr-sm-2"
+                >
+                  <TotalCost
+                    className="nav-link"
+                  />
+                </li>
               </ul>
             </div>
           </nav>
@@ -300,24 +454,39 @@ ShallowWrapper {
               <ul
                 className=" nav navbar-nav flex-row"
               >
-                <Link
-                  href="/"
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/"
                   >
-                    Home
-                  </a>
-                </Link>
-                <Link
-                  href="/cart"
+                    <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/cart"
                   >
-                    Cart
-                  </a>
-                </Link>
+                    <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item mr-sm-2"
+                >
+                  <TotalCost
+                    className="nav-link"
+                  />
+                </li>
               </ul>
             </div>
           </nav>,
@@ -334,24 +503,39 @@ ShallowWrapper {
               <ul
                 className=" nav navbar-nav flex-row"
               >
-                <Link
-                  href="/"
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/"
                   >
-                    Home
-                  </a>
-                </Link>
-                <Link
-                  href="/cart"
+                    <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/cart"
                   >
-                    Cart
-                  </a>
-                </Link>
+                    <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item mr-sm-2"
+                >
+                  <TotalCost
+                    className="nav-link"
+                  />
+                </li>
               </ul>
             </div>,
             "className": "navbar navbar-expand-lg navbar-light bg-warning",
@@ -365,24 +549,39 @@ ShallowWrapper {
               "children": <ul
                 className=" nav navbar-nav flex-row"
               >
-                <Link
-                  href="/"
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/"
                   >
-                    Home
-                  </a>
-                </Link>
-                <Link
-                  href="/cart"
+                    <a
+                      className="nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item"
                 >
-                  <a
-                    className="nav-item nav-link"
+                  <Link
+                    href="/cart"
                   >
-                    Cart
-                  </a>
-                </Link>
+                    <a
+                      className="nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>
+                </li>
+                <li
+                  className="nav-item mr-sm-2"
+                >
+                  <TotalCost
+                    className="nav-link"
+                  />
+                </li>
               </ul>,
               "className": "container",
             },
@@ -393,24 +592,41 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <Link
-                    href="/"
-                  >
-                    <a
-                      className="nav-item nav-link"
+                  Array [
+                    <li
+                      className="nav-item"
                     >
-                      Home
-                    </a>
-                  </Link>,
-                  <Link
-                    href="/cart"
-                  >
-                    <a
-                      className="nav-item nav-link"
+                      <Link
+                        href="/"
+                      >
+                        <a
+                          className="nav-link"
+                        >
+                          Home
+                        </a>
+                      </Link>
+                    </li>,
+                    <li
+                      className="nav-item"
                     >
-                      Cart
-                    </a>
-                  </Link>,
+                      <Link
+                        href="/cart"
+                      >
+                        <a
+                          className="nav-link"
+                        >
+                          Cart
+                        </a>
+                      </Link>
+                    </li>,
+                  ],
+                  <li
+                    className="nav-item mr-sm-2"
+                  >
+                    <TotalCost
+                      className="nav-link"
+                    />
+                  </li>,
                 ],
                 "className": " nav navbar-nav flex-row",
               },
@@ -419,56 +635,118 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": "/0",
-                  "nodeType": "class",
+                  "nodeType": "host",
                   "props": Object {
-                    "children": <a
-                      className="nav-item nav-link"
+                    "children": <Link
+                      href="/"
                     >
-                      Home
-                    </a>,
-                    "href": "/",
+                      <a
+                        className="nav-link"
+                      >
+                        Home
+                      </a>
+                    </Link>,
+                    "className": "nav-item",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
-                      "children": "Home",
-                      "className": "nav-item nav-link",
+                      "children": <a
+                        className="nav-link"
+                      >
+                        Home
+                      </a>,
+                      "href": "/",
                     },
                     "ref": null,
-                    "rendered": "Home",
-                    "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Home",
+                        "className": "nav-link",
+                      },
+                      "ref": null,
+                      "rendered": "Home",
+                      "type": "a",
+                    },
+                    "type": [Function],
                   },
-                  "type": [Function],
+                  "type": "li",
                 },
                 Object {
                   "instance": null,
                   "key": "/cart1",
-                  "nodeType": "class",
+                  "nodeType": "host",
                   "props": Object {
-                    "children": <a
-                      className="nav-item nav-link"
+                    "children": <Link
+                      href="/cart"
                     >
-                      Cart
-                    </a>,
-                    "href": "/cart",
+                      <a
+                        className="nav-link"
+                      >
+                        Cart
+                      </a>
+                    </Link>,
+                    "className": "nav-item",
                   },
                   "ref": null,
                   "rendered": Object {
                     "instance": null,
                     "key": undefined,
-                    "nodeType": "host",
+                    "nodeType": "class",
                     "props": Object {
-                      "children": "Cart",
-                      "className": "nav-item nav-link",
+                      "children": <a
+                        className="nav-link"
+                      >
+                        Cart
+                      </a>,
+                      "href": "/cart",
                     },
                     "ref": null,
-                    "rendered": "Cart",
-                    "type": "a",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Cart",
+                        "className": "nav-link",
+                      },
+                      "ref": null,
+                      "rendered": "Cart",
+                      "type": "a",
+                    },
+                    "type": [Function],
                   },
-                  "type": [Function],
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <TotalCost
+                      className="nav-link"
+                    />,
+                    "className": "nav-item mr-sm-2",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "nav-link",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
                 },
               ],
               "type": "ul",
