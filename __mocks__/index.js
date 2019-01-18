@@ -93,4 +93,34 @@ export const PIZZAS = [{
   "maxToppings": null,
   "basePrice": 13.49,
   toppings: TOPPINGS
+},{
+  "name": "small",
+  "maxToppings": 3,
+  "basePrice": 9.89,
+  toppings: TOPPINGS
+},{
+  "name": "medium",
+  "maxToppings": 5,
+  "basePrice": 10.89,
+  toppings: TOPPINGS
+}, {
+  "name": "large",
+  "maxToppings": null,
+  "basePrice": 13.49,
+  toppings: TOPPINGS
+},{
+  "name": "small",
+  "maxToppings": 3,
+  "basePrice": 9.89,
+  toppings: TOPPINGS
+},{
+  "name": "medium",
+  "maxToppings": 5,
+  "basePrice": 10.89,
+  toppings: TOPPINGS
+}, {
+  "name": "large",
+  "maxToppings": null,
+  "basePrice": 13.49,
+  toppings: TOPPINGS
 }];

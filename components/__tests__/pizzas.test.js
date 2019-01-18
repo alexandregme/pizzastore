@@ -33,8 +33,8 @@ describe("Pizzas Custom component props", ()=>{
     mountedPizzas = shallow(<Pizzas {...props} />);
   });
 
-  it('expect to render 3 pizza sizes', () => {
+  it('expect to render 9 pizza sizes', () => {
     let pizzas = mountedPizzas.find(Pizza);
-    expect(pizzas.length).toEqual(3);
+    expect(pizzas.length).toEqual(9);
   });
 });

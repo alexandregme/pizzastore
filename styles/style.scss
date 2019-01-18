@@ -4,13 +4,20 @@
   margin-right: 10px;
 }
 
-.card-deck{
+.card-deck {
   margin-top: 10px;
-}
+  justify-content: space-between;
 
-.card {
-  align-items: center;
-  padding: 10px 0;
+  .card {
+    max-width: 31%;
+    align-items: center;
+    padding: 10px 0;
+    flex: none;
+    margin: 0 0 10px 0 !important;
+    .card-header{
+      display: flex;
+    }
+  }
 }
 
 .pizzaSVG {
