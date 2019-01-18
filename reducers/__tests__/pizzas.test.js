@@ -1,4 +1,4 @@
-import pizzas from '../../reducers/pizzas';
+import pizzas, { updateToppings, disabledToppings, updateTotalPrice, updatePizza} from '../../reducers/pizzas';
 import deepFreeze from 'deep-freeze';
 import { PIZZAS, CUSTOM_PIZZA } from '../../__mocks__';
 
@@ -35,7 +35,6 @@ describe('pizzas reducer', () => {
   });
 
   it('should handle TOGGLE_TOPPING_FROM_PIZZA with deepFreeze mutation', () => {
-
     pizzasBefore = [CUSTOM_PIZZA];
     pizzasAfter = [{
       "name": "custom pizza",
@@ -44,8 +43,12 @@ describe('pizzas reducer', () => {
       "totalPrice": 1,
       toppings:[{
         name:"topping 1",
-        price:1,
+        price:4,
         isChecked:true
+      },{
+        name:"topping 2",
+        price:1,
+        isChecked:false
       }]
     }];
 
@@ -53,5 +56,38 @@ describe('pizzas reducer', () => {
     deepFreeze(actionToggleTopping);
 
     expect(pizzas(pizzasBefore, actionToggleTopping)).toEqual(pizzasAfter);
+  });
+});
+
+describe('pizzas function updateToppings', () => {
+  it('should return the initial state', () => {
+    expect(updateToppings(undefined, {})).toEqual([]);
+  });
+});
+
+describe('pizzas function disabledToppings', () => {
+  it('should return the initial state', () => {
+    expect(disabledToppings(undefined, {})).toEqual(false);
+  });
+});
+
+describe('pizzas function updateTotalPrice', () => {
+  it('should return the initial state', () => {
+    expect(updateTotalPrice(undefined, {})).toEqual(0);
+  });
+
+  it('should return the right value for sum with deepFreeze mutation', () => {
+    let customPizza = CUSTOM_PIZZA;
+    let totalPrice = 5;
+
+    deepFreeze(customPizza);
+
+    expect(updateTotalPrice(customPizza)).toEqual(totalPrice);
+  });
+});
+
+describe('pizzas function updatePizza', () => {
+  it('should return the initial state', () => {
+    expect(updatePizza(undefined, {})).toEqual([]);
   });
 });

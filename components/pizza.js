@@ -16,7 +16,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart = ()=>{}}) => (
           <p id="pizzaMaxToppings" className="card-text">Max Toppings - {pizza.maxToppings ? pizza.maxToppings : 'unlimited toppings!'}</p>
           <p id="pizzaBasePrice" className="card-text">Base price - ${pizza.basePrice}</p>
           <p id="pizzaTotalPrice" className="card-text">Total price - ${pizza.totalPrice}</p>
-          <Toppings toppings={pizza.toppings} pizzaName={pizza.name}/>
+          <Toppings toppings={pizza.toppings} pizzaName={pizza.name} disabledToppings={pizza.disabledToppings}/>
           <Button
             label={'add to cart'}
             className="btn btn-warning text-gray-dark"

@@ -1,21 +1,29 @@
-const updateToppings = (state, action) => {
+export const updateToppings = (state = [], action) => {
   switch (action.type) {
     case 'TOGGLE_TOPPING_FROM_PIZZA':
       return state.toppings.map(topping => {
         if (topping.name !== action.toppingName) {
           return topping
         }
-        return {
-          ...topping,
-          isChecked: !topping.isChecked
-        }
+        let updateTopping = {...topping};
+        updateTopping.isChecked = !topping.isChecked;
+        return updateTopping
       });
     default:
       return state;
   }
 };
 
-const updateTotalPrice = (state) =>{
+export const disabledToppings = (state = {}) => {
+  if (!state.maxToppings){
+    return false;
+  }
+
+  let totalToggled = state.toppings.filter(topping => topping.isChecked);
+  return state.maxToppings <= totalToggled.length;
+};
+
+export const updateTotalPrice = (state = {toppings:[]}) =>{
   return  state.toppings
     .filter((topping)=>(topping.isChecked))
     .reduce(
@@ -24,7 +32,7 @@ const updateTotalPrice = (state) =>{
     );
 };
 
-const updatePizza = (state, action) =>{
+export const updatePizza = (state = [], action) =>{
   switch (action.type) {
     case 'TOGGLE_TOPPING_FROM_PIZZA':
       return state.map(pizza =>{
@@ -34,6 +42,7 @@ const updatePizza = (state, action) =>{
           let updatePizza = {...pizza};
           updatePizza.toppings = updateToppings(updatePizza, action);
           updatePizza.totalPrice = updateTotalPrice(updatePizza);
+          updatePizza.disabledToppings = disabledToppings(updatePizza);
           return updatePizza;
         }
       });

@@ -59,8 +59,12 @@ export const CUSTOM_PIZZA = {
   "totalPrice": 1,
   toppings:[{
     name:"topping 1",
-    price:1,
+    price:4,
     isChecked:true
+  },{
+    name:"topping 2",
+    price:1,
+    isChecked:false
   }]
 };
 

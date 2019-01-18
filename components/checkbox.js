@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const Checkbox = ({label = 'default label', key , isChecked = false, handleChange = ()=>{} }) => (
+const Checkbox = ({label = 'default label', key , isChecked = false, isDisabled = false, handleChange = ()=>{} }) => (
   <React.Fragment>
     <div className="input-group-text">
       <label
@@ -12,6 +12,7 @@ const Checkbox = ({label = 'default label', key , isChecked = false, handleChang
         onChange={handleChange}
         id={key}
         checked={isChecked}
+        disabled={isDisabled}
       />
         {label}
     </label>

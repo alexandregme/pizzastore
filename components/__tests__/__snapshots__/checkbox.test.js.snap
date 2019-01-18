@@ -23,6 +23,7 @@ ShallowWrapper {
         <label>
           <input
             checked={false}
+            disabled={false}
             onChange={[Function]}
             type="checkbox"
           />
@@ -39,6 +40,7 @@ ShallowWrapper {
         "children": <label>
           <input
             checked={false}
+            disabled={false}
             onChange={[Function]}
             type="checkbox"
           />
@@ -55,6 +57,7 @@ ShallowWrapper {
           "children": Array [
             <input
               checked={false}
+              disabled={false}
               onChange={[Function]}
               type="checkbox"
             />,
@@ -70,6 +73,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "checked": false,
+              "disabled": false,
               "id": undefined,
               "onChange": [Function],
               "type": "checkbox",
@@ -98,6 +102,7 @@ ShallowWrapper {
           <label>
             <input
               checked={false}
+              disabled={false}
               onChange={[Function]}
               type="checkbox"
             />
@@ -114,6 +119,7 @@ ShallowWrapper {
           "children": <label>
             <input
               checked={false}
+              disabled={false}
               onChange={[Function]}
               type="checkbox"
             />
@@ -130,6 +136,7 @@ ShallowWrapper {
             "children": Array [
               <input
                 checked={false}
+                disabled={false}
                 onChange={[Function]}
                 type="checkbox"
               />,
@@ -145,6 +152,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "checked": false,
+                "disabled": false,
                 "id": undefined,
                 "onChange": [Function],
                 "type": "checkbox",

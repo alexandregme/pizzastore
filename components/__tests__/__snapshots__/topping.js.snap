@@ -20,6 +20,7 @@ ShallowWrapper {
       "children": <Checkbox
         handleChange={[Function]}
         isChecked={false}
+        isDisabled={false}
         label=" default topping - $0"
       />,
     },
@@ -31,6 +32,7 @@ ShallowWrapper {
       "props": Object {
         "handleChange": [Function],
         "isChecked": false,
+        "isDisabled": false,
         "label": " default topping - $0",
       },
       "ref": null,
@@ -48,6 +50,7 @@ ShallowWrapper {
         "children": <Checkbox
           handleChange={[Function]}
           isChecked={false}
+          isDisabled={false}
           label=" default topping - $0"
         />,
       },
@@ -59,6 +62,7 @@ ShallowWrapper {
         "props": Object {
           "handleChange": [Function],
           "isChecked": false,
+          "isDisabled": false,
           "label": " default topping - $0",
         },
         "ref": null,
