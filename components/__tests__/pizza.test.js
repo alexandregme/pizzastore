@@ -33,7 +33,13 @@ describe("Pizza", ()=>{
   it('expect to have default value for base price', () => {
     let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
-    expect(pizzaBasePriceValue.text()).toEqual("Price - $0");
+    expect(pizzaBasePriceValue.text()).toEqual("Base price - $0");
+  });
+
+  it('expect to have default value for total price', () => {
+    let pizzaTotalPriceValue = mountedPizza.find('p#pizzaTotalPrice');
+    expect(pizzaTotalPriceValue).toHaveLength(1);
+    expect(pizzaTotalPriceValue.text()).toEqual("Total price - $0");
   });
 
   it('expect to have Toppings component', () => {
@@ -68,6 +74,12 @@ describe("Pizza Custom component props", ()=>{
   it('expect to have default value for base price', () => {
     let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
-    expect(pizzaBasePriceValue.text()).toEqual("Price - $1");
+    expect(pizzaBasePriceValue.text()).toEqual("Base price - $1");
+  });
+
+  it('expect to have default value for total price', () => {
+    let pizzaTotalPriceValue = mountedPizza.find('p#pizzaTotalPrice');
+    expect(pizzaTotalPriceValue).toHaveLength(1);
+    expect(pizzaTotalPriceValue.text()).toEqual("Total price - $1");
   });
 });

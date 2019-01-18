@@ -14,7 +14,8 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart = ()=>{}}) => (
         <div className="card-body">
           <h5 id="pizzaName" className="card-title">Pizza size - {pizza.name}</h5>
           <p id="pizzaMaxToppings" className="card-text">Max Toppings - {pizza.maxToppings ? pizza.maxToppings : 'unlimited toppings!'}</p>
-          <p id="pizzaBasePrice" className="card-text">Price - ${pizza.basePrice}</p>
+          <p id="pizzaBasePrice" className="card-text">Base price - ${pizza.basePrice}</p>
+          <p id="pizzaTotalPrice" className="card-text">Total price - ${pizza.totalPrice}</p>
           <Toppings toppings={pizza.toppings} pizzaName={pizza.name}/>
           <Button
             label={'add to cart'}

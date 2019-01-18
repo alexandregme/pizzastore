@@ -48,6 +48,7 @@ export const DEFAULT_PIZZA = {
   "name": "default pizza",
   "maxToppings": 0,
   "basePrice": 0,
+  "totalPrice": 0,
   toppings:[]
 };
 
@@ -55,6 +56,7 @@ export const CUSTOM_PIZZA = {
   "name": "custom pizza",
   "maxToppings": 1,
   "basePrice": 1,
+  "totalPrice": 1,
   toppings:[{
     name:"topping 1",
     price:1,

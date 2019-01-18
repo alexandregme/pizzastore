@@ -20,7 +20,7 @@ describe('pizzas reducer', () => {
   let pizzasAfter;
 
   it('should return the initial state', () => {
-    expect(pizzas(undefined, {})).toEqual([])
+    expect(pizzas(undefined, {})).toEqual([]);
   });
 
   it('should handle FETCH_PIZZAS with deepFreeze mutation', () => {
@@ -41,6 +41,7 @@ describe('pizzas reducer', () => {
       "name": "custom pizza",
       "maxToppings": 1,
       "basePrice": 1,
+      "totalPrice": 1,
       toppings:[{
         name:"topping 1",
         price:1,
