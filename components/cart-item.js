@@ -12,7 +12,7 @@ export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart}) =>(
     <p className="pizzaBasePrice">{cartItem.basePrice}</p>
     <Button
       label={`remove item`}
-      handleClick={() => {handleRemoveFromCart(cartItem.id);}}
+      handleClick={handleRemoveFromCart}
     />
   </React.Fragment>
 );

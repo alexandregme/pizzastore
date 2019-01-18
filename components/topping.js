@@ -6,7 +6,7 @@ import Checkbox from "./checkbox";
 import { DEFAULT_TOPPING } from "../__mocks__";
 
 
-export const Topping = ({topping = DEFAULT_TOPPING, pizzaName, handleToggleTopping}) => (
+export const Topping = ({topping = DEFAULT_TOPPING, pizzaName, handleToggleTopping = ()=>{}}) => (
   <React.Fragment>
     <Checkbox handleChange={handleToggleTopping} label={` ${topping.name} - $${topping.price}`} isChecked={topping.isChecked}/>
   </React.Fragment>

@@ -3,16 +3,14 @@ import Pizza from "./pizza";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 
-const renderPizzas = pizzas => (
-  pizzas.length > 0 ?
-    pizzas.map((pizza,id) => <Pizza key={id} pizza={pizza}/>) :
-    <span>No pizzas were found, plz come back soon.</span>
-);
-
 export const Pizzas = ({pizzas = []}) => (
   <React.Fragment>
     <div className="card-deck">
-      {renderPizzas(pizzas)}
+      {
+        pizzas.length > 0 ?
+        pizzas.map((pizza,id) => <Pizza key={id} pizza={pizza}/>) :
+        <span>No pizzas were found, plz come back soon.</span>
+      }
     </div>
   </React.Fragment>
 );

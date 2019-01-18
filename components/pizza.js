@@ -5,9 +5,9 @@ import { addToCart } from '../actions';
 import Button from "./button";
 import Toppings from "./toppings";
 import { DEFAULT_PIZZA } from "../__mocks__";
-import PizzaSVG from '../svgs/pizza.svg'
+import PizzaSVG from '../svgs/pizza.svg';
 
-export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
+export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart = ()=>{}}) => (
   <React.Fragment>
     <div className="card bg-inverse text-white text-center mb-3">
         <PizzaSVG className="pizzaSVG" />
@@ -19,7 +19,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart}) =>(
           <Button
             label={'add to cart'}
             className="btn btn-warning text-gray-dark"
-            handleClick={() => {handleAddToCart(pizza);}}
+            handleClick={handleAddToCart}
           />
         </div>
     </div>

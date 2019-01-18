@@ -21,6 +21,7 @@ const Checkbox = ({label = 'default label', key , isChecked = false, handleChang
 
 Checkbox.propTypes = {
   label: PropTypes.string,
+  key: PropTypes.string,
   isChecked: PropTypes.bool,
   handleChange: PropTypes.func
 };
