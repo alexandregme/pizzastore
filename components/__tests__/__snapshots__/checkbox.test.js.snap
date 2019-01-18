@@ -20,12 +20,12 @@ ShallowWrapper {
       "children": Array [
         <input
           checked={false}
-          id="checkbox_5618497041418344"
+          id="checkbox_21728090788264964"
           onChange={[Function]}
           type="checkbox"
         />,
         <label
-          htmlFor="checkbox_5618497041418344"
+          htmlFor="checkbox_21728090788264964"
         >
           default label
         </label>,
@@ -39,7 +39,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "checked": false,
-          "id": "checkbox_5618497041418344",
+          "id": "checkbox_21728090788264964",
           "onChange": [Function],
           "type": "checkbox",
         },
@@ -53,7 +53,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "default label",
-          "htmlFor": "checkbox_5618497041418344",
+          "htmlFor": "checkbox_21728090788264964",
         },
         "ref": null,
         "rendered": "default label",
@@ -71,12 +71,12 @@ ShallowWrapper {
         "children": Array [
           <input
             checked={false}
-            id="checkbox_5618497041418344"
+            id="checkbox_21728090788264964"
             onChange={[Function]}
             type="checkbox"
           />,
           <label
-            htmlFor="checkbox_5618497041418344"
+            htmlFor="checkbox_21728090788264964"
           >
             default label
           </label>,
@@ -90,7 +90,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "checked": false,
-            "id": "checkbox_5618497041418344",
+            "id": "checkbox_21728090788264964",
             "onChange": [Function],
             "type": "checkbox",
           },
@@ -104,7 +104,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "default label",
-            "htmlFor": "checkbox_5618497041418344",
+            "htmlFor": "checkbox_21728090788264964",
           },
           "ref": null,
           "rendered": "default label",

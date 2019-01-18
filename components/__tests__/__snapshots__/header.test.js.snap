@@ -18,21 +18,35 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <header>
-        <nav>
-          <Link
-            href="/"
+        <nav
+          className="navbar navbar-expand-lg navbar-light bg-warning"
+        >
+          <div
+            className="container"
           >
-            <a>
-              Home
-            </a>
-          </Link>
-          <Link
-            href="/cart"
-          >
-            <a>
-              Cart
-            </a>
-          </Link>
+            <ul
+              className=" nav navbar-nav flex-row"
+            >
+              <Link
+                href="/"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Home
+                </a>
+              </Link>
+              <Link
+                href="/cart"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Cart
+                </a>
+              </Link>
+            </ul>
+          </div>
         </nav>
       </header>,
     },
@@ -42,21 +56,35 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <nav>
-          <Link
-            href="/"
+        "children": <nav
+          className="navbar navbar-expand-lg navbar-light bg-warning"
+        >
+          <div
+            className="container"
           >
-            <a>
-              Home
-            </a>
-          </Link>
-          <Link
-            href="/cart"
-          >
-            <a>
-              Cart
-            </a>
-          </Link>
+            <ul
+              className=" nav navbar-nav flex-row"
+            >
+              <Link
+                href="/"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Home
+                </a>
+              </Link>
+              <Link
+                href="/cart"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Cart
+                </a>
+              </Link>
+            </ul>
+          </div>
         </nav>,
       },
       "ref": null,
@@ -65,74 +93,153 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <Link
-              href="/"
+          "children": <div
+            className="container"
+          >
+            <ul
+              className=" nav navbar-nav flex-row"
             >
-              <a>
-                Home
-              </a>
-            </Link>,
-            <Link
-              href="/cart"
-            >
-              <a>
-                Cart
-              </a>
-            </Link>,
-          ],
+              <Link
+                href="/"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Home
+                </a>
+              </Link>
+              <Link
+                href="/cart"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Cart
+                </a>
+              </Link>
+            </ul>
+          </div>,
+          "className": "navbar navbar-expand-lg navbar-light bg-warning",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className=" nav navbar-nav flex-row"
+            >
+              <Link
+                href="/"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Home
+                </a>
+              </Link>
+              <Link
+                href="/cart"
+              >
+                <a
+                  className="nav-item nav-link"
+                >
+                  Cart
+                </a>
+              </Link>
+            </ul>,
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": Object {
             "instance": null,
-            "key": "/0",
-            "nodeType": "class",
+            "key": undefined,
+            "nodeType": "host",
             "props": Object {
-              "children": <a>
-                Home
-              </a>,
-              "href": "/",
+              "children": Array [
+                <Link
+                  href="/"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>,
+                <Link
+                  href="/cart"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>,
+              ],
+              "className": " nav navbar-nav flex-row",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Home",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "/0",
+                "nodeType": "class",
+                "props": Object {
+                  "children": <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>,
+                  "href": "/",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Home",
+                    "className": "nav-item nav-link",
+                  },
+                  "ref": null,
+                  "rendered": "Home",
+                  "type": "a",
+                },
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": "Home",
-              "type": "a",
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "/cart1",
-            "nodeType": "class",
-            "props": Object {
-              "children": <a>
-                Cart
-              </a>,
-              "href": "/cart",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Cart",
+              Object {
+                "instance": null,
+                "key": "/cart1",
+                "nodeType": "class",
+                "props": Object {
+                  "children": <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>,
+                  "href": "/cart",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Cart",
+                    "className": "nav-item nav-link",
+                  },
+                  "ref": null,
+                  "rendered": "Cart",
+                  "type": "a",
+                },
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": "Cart",
-              "type": "a",
-            },
-            "type": [Function],
+            ],
+            "type": "ul",
           },
-        ],
+          "type": "div",
+        },
         "type": "nav",
       },
       "type": "header",
@@ -146,21 +253,35 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <header>
-          <nav>
-            <Link
-              href="/"
+          <nav
+            className="navbar navbar-expand-lg navbar-light bg-warning"
+          >
+            <div
+              className="container"
             >
-              <a>
-                Home
-              </a>
-            </Link>
-            <Link
-              href="/cart"
-            >
-              <a>
-                Cart
-              </a>
-            </Link>
+              <ul
+                className=" nav navbar-nav flex-row"
+              >
+                <Link
+                  href="/"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link
+                  href="/cart"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </ul>
+            </div>
           </nav>
         </header>,
       },
@@ -170,21 +291,35 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <nav>
-            <Link
-              href="/"
+          "children": <nav
+            className="navbar navbar-expand-lg navbar-light bg-warning"
+          >
+            <div
+              className="container"
             >
-              <a>
-                Home
-              </a>
-            </Link>
-            <Link
-              href="/cart"
-            >
-              <a>
-                Cart
-              </a>
-            </Link>
+              <ul
+                className=" nav navbar-nav flex-row"
+              >
+                <Link
+                  href="/"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link
+                  href="/cart"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </ul>
+            </div>
           </nav>,
         },
         "ref": null,
@@ -193,74 +328,153 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                href="/"
+            "children": <div
+              className="container"
+            >
+              <ul
+                className=" nav navbar-nav flex-row"
               >
-                <a>
-                  Home
-                </a>
-              </Link>,
-              <Link
-                href="/cart"
-              >
-                <a>
-                  Cart
-                </a>
-              </Link>,
-            ],
+                <Link
+                  href="/"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link
+                  href="/cart"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </ul>
+            </div>,
+            "className": "navbar navbar-expand-lg navbar-light bg-warning",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className=" nav navbar-nav flex-row"
+              >
+                <Link
+                  href="/"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link
+                  href="/cart"
+                >
+                  <a
+                    className="nav-item nav-link"
+                  >
+                    Cart
+                  </a>
+                </Link>
+              </ul>,
+              "className": "container",
+            },
+            "ref": null,
+            "rendered": Object {
               "instance": null,
-              "key": "/0",
-              "nodeType": "class",
+              "key": undefined,
+              "nodeType": "host",
               "props": Object {
-                "children": <a>
-                  Home
-                </a>,
-                "href": "/",
+                "children": Array [
+                  <Link
+                    href="/"
+                  >
+                    <a
+                      className="nav-item nav-link"
+                    >
+                      Home
+                    </a>
+                  </Link>,
+                  <Link
+                    href="/cart"
+                  >
+                    <a
+                      className="nav-item nav-link"
+                    >
+                      Cart
+                    </a>
+                  </Link>,
+                ],
+                "className": " nav navbar-nav flex-row",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Home",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "/0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <a
+                      className="nav-item nav-link"
+                    >
+                      Home
+                    </a>,
+                    "href": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Home",
+                      "className": "nav-item nav-link",
+                    },
+                    "ref": null,
+                    "rendered": "Home",
+                    "type": "a",
+                  },
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": "Home",
-                "type": "a",
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "/cart1",
-              "nodeType": "class",
-              "props": Object {
-                "children": <a>
-                  Cart
-                </a>,
-                "href": "/cart",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Cart",
+                Object {
+                  "instance": null,
+                  "key": "/cart1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <a
+                      className="nav-item nav-link"
+                    >
+                      Cart
+                    </a>,
+                    "href": "/cart",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Cart",
+                      "className": "nav-item nav-link",
+                    },
+                    "ref": null,
+                    "rendered": "Cart",
+                    "type": "a",
+                  },
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": "Cart",
-                "type": "a",
-              },
-              "type": [Function],
+              ],
+              "type": "ul",
             },
-          ],
+            "type": "div",
+          },
           "type": "nav",
         },
         "type": "header",

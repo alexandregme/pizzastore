@@ -17,95 +17,216 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <p
-          className="pizzaName"
+      "children": <div
+        className="card bg-inverse text-white text-center"
+      >
+        <PizzaSVG
+          className="pizzaSVG"
+          viewBox="0 0 58 58"
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        <div
+          className="card-body"
         >
-          default pizza
-        </p>,
-        <p
-          className="pizzaMaxToppings"
-        >
-          0
-        </p>,
-        <p
-          className="pizzaBasePrice"
-        >
-          0
-        </p>,
-        <Toppings
-          pizzaName="default pizza"
-          toppings={Array []}
-        />,
-        <Button
-          handleClick={[Function]}
-          label="add to cart"
-        />,
-      ],
+          <h5
+            className="card-title"
+            id="pizzaName"
+          >
+            default pizza
+          </h5>
+          <p
+            className="card-text"
+            id="pizzaMaxToppings"
+          >
+            0
+          </p>
+          <p
+            className="card-text"
+            id="pizzaBasePrice"
+          >
+            0
+          </p>
+          <Toppings
+            pizzaName="default pizza"
+            toppings={Array []}
+          />
+          <Button
+            className="btn btn-warning text-gray-dark"
+            handleClick={[Function]}
+            label="add to cart"
+          />
+        </div>
+      </div>,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "default pizza",
-          "className": "pizzaName",
-        },
-        "ref": null,
-        "rendered": "default pizza",
-        "type": "p",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <PizzaSVG
+            className="pizzaSVG"
+            viewBox="0 0 58 58"
+            xmlns="http://www.w3.org/2000/svg"
+          />,
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title"
+              id="pizzaName"
+            >
+              default pizza
+            </h5>
+            <p
+              className="card-text"
+              id="pizzaMaxToppings"
+            >
+              0
+            </p>
+            <p
+              className="card-text"
+              id="pizzaBasePrice"
+            >
+              0
+            </p>
+            <Toppings
+              pizzaName="default pizza"
+              toppings={Array []}
+            />
+            <Button
+              className="btn btn-warning text-gray-dark"
+              handleClick={[Function]}
+              label="add to cart"
+            />
+          </div>,
+        ],
+        "className": "card bg-inverse text-white text-center",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": 0,
-          "className": "pizzaMaxToppings",
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "className": "pizzaSVG",
+            "viewBox": "0 0 58 58",
+            "xmlns": "http://www.w3.org/2000/svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": 0,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": 0,
-          "className": "pizzaBasePrice",
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h5
+                className="card-title"
+                id="pizzaName"
+              >
+                default pizza
+              </h5>,
+              <p
+                className="card-text"
+                id="pizzaMaxToppings"
+              >
+                0
+              </p>,
+              <p
+                className="card-text"
+                id="pizzaBasePrice"
+              >
+                0
+              </p>,
+              <Toppings
+                pizzaName="default pizza"
+                toppings={Array []}
+              />,
+              <Button
+                className="btn btn-warning text-gray-dark"
+                handleClick={[Function]}
+                label="add to cart"
+              />,
+            ],
+            "className": "card-body",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "default pizza",
+                "className": "card-title",
+                "id": "pizzaName",
+              },
+              "ref": null,
+              "rendered": "default pizza",
+              "type": "h5",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 0,
+                "className": "card-text",
+                "id": "pizzaMaxToppings",
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 0,
+                "className": "card-text",
+                "id": "pizzaBasePrice",
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "pizzaName": "default pizza",
+                "toppings": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "btn btn-warning text-gray-dark",
+                "handleClick": [Function],
+                "label": "add to cart",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
-        "ref": null,
-        "rendered": 0,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "pizzaName": "default pizza",
-          "toppings": Array [],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleClick": [Function],
-          "label": "add to cart",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
+      ],
+      "type": "div",
+    },
     "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
@@ -114,95 +235,216 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <p
-            className="pizzaName"
+        "children": <div
+          className="card bg-inverse text-white text-center"
+        >
+          <PizzaSVG
+            className="pizzaSVG"
+            viewBox="0 0 58 58"
+            xmlns="http://www.w3.org/2000/svg"
+          />
+          <div
+            className="card-body"
           >
-            default pizza
-          </p>,
-          <p
-            className="pizzaMaxToppings"
-          >
-            0
-          </p>,
-          <p
-            className="pizzaBasePrice"
-          >
-            0
-          </p>,
-          <Toppings
-            pizzaName="default pizza"
-            toppings={Array []}
-          />,
-          <Button
-            handleClick={[Function]}
-            label="add to cart"
-          />,
-        ],
+            <h5
+              className="card-title"
+              id="pizzaName"
+            >
+              default pizza
+            </h5>
+            <p
+              className="card-text"
+              id="pizzaMaxToppings"
+            >
+              0
+            </p>
+            <p
+              className="card-text"
+              id="pizzaBasePrice"
+            >
+              0
+            </p>
+            <Toppings
+              pizzaName="default pizza"
+              toppings={Array []}
+            />
+            <Button
+              className="btn btn-warning text-gray-dark"
+              handleClick={[Function]}
+              label="add to cart"
+            />
+          </div>
+        </div>,
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "default pizza",
-            "className": "pizzaName",
-          },
-          "ref": null,
-          "rendered": "default pizza",
-          "type": "p",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <PizzaSVG
+              className="pizzaSVG"
+              viewBox="0 0 58 58"
+              xmlns="http://www.w3.org/2000/svg"
+            />,
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+                id="pizzaName"
+              >
+                default pizza
+              </h5>
+              <p
+                className="card-text"
+                id="pizzaMaxToppings"
+              >
+                0
+              </p>
+              <p
+                className="card-text"
+                id="pizzaBasePrice"
+              >
+                0
+              </p>
+              <Toppings
+                pizzaName="default pizza"
+                toppings={Array []}
+              />
+              <Button
+                className="btn btn-warning text-gray-dark"
+                handleClick={[Function]}
+                label="add to cart"
+              />
+            </div>,
+          ],
+          "className": "card bg-inverse text-white text-center",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": 0,
-            "className": "pizzaMaxToppings",
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "pizzaSVG",
+              "viewBox": "0 0 58 58",
+              "xmlns": "http://www.w3.org/2000/svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": 0,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": 0,
-            "className": "pizzaBasePrice",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h5
+                  className="card-title"
+                  id="pizzaName"
+                >
+                  default pizza
+                </h5>,
+                <p
+                  className="card-text"
+                  id="pizzaMaxToppings"
+                >
+                  0
+                </p>,
+                <p
+                  className="card-text"
+                  id="pizzaBasePrice"
+                >
+                  0
+                </p>,
+                <Toppings
+                  pizzaName="default pizza"
+                  toppings={Array []}
+                />,
+                <Button
+                  className="btn btn-warning text-gray-dark"
+                  handleClick={[Function]}
+                  label="add to cart"
+                />,
+              ],
+              "className": "card-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "default pizza",
+                  "className": "card-title",
+                  "id": "pizzaName",
+                },
+                "ref": null,
+                "rendered": "default pizza",
+                "type": "h5",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "card-text",
+                  "id": "pizzaMaxToppings",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "card-text",
+                  "id": "pizzaBasePrice",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "pizzaName": "default pizza",
+                  "toppings": Array [],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "btn btn-warning text-gray-dark",
+                  "handleClick": [Function],
+                  "label": "add to cart",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
-          "ref": null,
-          "rendered": 0,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "pizzaName": "default pizza",
-            "toppings": Array [],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleClick": [Function],
-            "label": "add to cart",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
+        ],
+        "type": "div",
+      },
       "type": Symbol(react.fragment),
     },
   ],

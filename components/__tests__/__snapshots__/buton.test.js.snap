@@ -18,6 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "button",
+      "className": "btn btn-primary",
       "onClick": [Function],
     },
     "ref": null,
@@ -31,6 +32,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "button",
+        "className": "btn btn-primary",
         "onClick": [Function],
       },
       "ref": null,

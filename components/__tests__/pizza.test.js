@@ -19,19 +19,19 @@ describe("Pizza", ()=>{
   });
 
   it('expect to have default value for pizza name', () => {
-    let pizzaNameValue = mountedPizza.find('p.pizzaName');
+    let pizzaNameValue = mountedPizza.find('h5#pizzaName');
     expect(pizzaNameValue).toHaveLength(1);
     expect(pizzaNameValue.text()).toEqual('default pizza');
   });
 
   it('expect to have default value for pizza max toppings', () => {
-    let pizzaMaxToppingValue = mountedPizza.find('p.pizzaMaxToppings');
+    let pizzaMaxToppingValue = mountedPizza.find('p#pizzaMaxToppings');
     expect(pizzaMaxToppingValue).toHaveLength(1);
     expect(pizzaMaxToppingValue.text()).toEqual("0");
   });
 
   it('expect to have default value for base price', () => {
-    let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
+    let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
     expect(pizzaBasePriceValue.text()).toEqual("0");
   });
@@ -54,19 +54,19 @@ describe("Pizza Custom component props", ()=>{
   });
 
   it('expect to have default value for pizza name', () => {
-    let pizzaNameValue = mountedPizza.find('p.pizzaName');
+    let pizzaNameValue = mountedPizza.find('h5#pizzaName');
     expect(pizzaNameValue).toHaveLength(1);
     expect(pizzaNameValue.text()).toEqual('custom pizza');
   });
 
   it('expect to have default value for pizza max toppings', () => {
-    let pizzaMaxToppingValue = mountedPizza.find('p.pizzaMaxToppings');
+    let pizzaMaxToppingValue = mountedPizza.find('p#pizzaMaxToppings');
     expect(pizzaMaxToppingValue).toHaveLength(1);
     expect(pizzaMaxToppingValue.text()).toEqual("1");
   });
 
   it('expect to have default value for base price', () => {
-    let pizzaBasePriceValue = mountedPizza.find('p.pizzaBasePrice');
+    let pizzaBasePriceValue = mountedPizza.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
     expect(pizzaBasePriceValue.text()).toEqual("1");
   });

@@ -20,7 +20,9 @@ ShallowWrapper {
       "children": Array [
         <Head />,
         <Header />,
-        undefined,
+        <div
+          className="container"
+        />,
       ],
     },
     "ref": null,
@@ -45,7 +47,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
     ],
     "type": Symbol(react.fragment),
   },
@@ -58,7 +71,9 @@ ShallowWrapper {
         "children": Array [
           <Head />,
           <Header />,
-          undefined,
+          <div
+            className="container"
+          />,
         ],
       },
       "ref": null,
@@ -83,7 +98,18 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "container",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
       ],
       "type": Symbol(react.fragment),
     },
