@@ -4,7 +4,6 @@ import expect from 'expect';
 import IndexPage from '../index';
 import App from '../../components/app';
 import Pizzas from "../../components/pizzas";
-import Cart from "../../components/cart";
 
 describe("Index page", ()=>{
     let mountedIndexPage;

@@ -41,6 +41,11 @@
   h2{
     padding:10px;
   }
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+  }
+
   .card{
     padding: 0;
     flex-direction: row;

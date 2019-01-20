@@ -25,8 +25,11 @@ const FETCH_PIZZAS_QUERY = `{
 const configureStore = () => {
   const store = createStore(reducers,{} ,composeWithDevTools(applyMiddleware()));
 
+  const url ='http://core-graphql.dev.waldo.photos/pizza';
+
   axios({
-    url: 'http://core-graphql.dev.waldo.photos/pizza',
+    url: `${url}`,
+    header:`Access-Control-Allow-Origin : ${url}`,
     method: 'post',
     data: {
       query: FETCH_PIZZAS_QUERY

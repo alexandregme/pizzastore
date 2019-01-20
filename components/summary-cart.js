@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import TotalItems from "./total-items";
 import TotalCost from "./total-cost";
 
-export const SummaryCart = ({className,totalItems, totalCost}) =>(
+export const SummaryCart = ({className ='',totalItems, totalCost}) =>(
   <div className={`summary-cart ${className}`}>
     <TotalItems totalItems={totalItems}/>
     <TotalCost totalCost={totalCost}/>

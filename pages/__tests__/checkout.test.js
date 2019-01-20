@@ -1,26 +1,27 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
+import CheckoutPage from '../checkout';
 import App from '../../components/app';
 import Checkout from "../../components/checkout";
 
 describe("Checkout page", ()=>{
-  let mountedCheckout;
+  let mountedCheckoutPage;
 
   beforeEach(()=>{
-    mountedCheckout = shallow(<Checkout />);
+    mountedCheckoutPage = shallow(<CheckoutPage />);
   });
 
   it('renders without crashing', () => {
-    shallow(<Checkout />);
-    expect(mountedCheckout).toMatchSnapshot();
+    shallow(<CheckoutPage />);
+    expect(mountedCheckoutPage).toMatchSnapshot();
   });
 
   it('expect to have App component', () => {
-    expect(mountedCheckout.find(App)).toHaveLength(1);
+    expect(mountedCheckoutPage.find(App)).toHaveLength(1);
   });
 
   it('expect to have Checkout component', () => {
-    expect(mountedCheckout.find(Checkout)).toHaveLength(1);
+    expect(mountedCheckoutPage.find(Checkout)).toHaveLength(1);
   });
 });
