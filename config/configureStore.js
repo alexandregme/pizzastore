@@ -27,13 +27,12 @@ const configureStore = () => {
 
   const url ='http://core-graphql.dev.waldo.photos';
 
-  axios({
+  axios.post({
     url: `${url}/pizza`,
     headers: {
       'Access-Control-Allow-Origin': url,
       'Content-Type': 'application/json; charset=utf-8'
     },
-    method: 'post',
     data: {
       query: FETCH_PIZZAS_QUERY
     }
