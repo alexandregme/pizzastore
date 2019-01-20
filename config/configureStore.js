@@ -31,7 +31,7 @@ const configureStore = () => {
   axios({
     url: `${url}/pizza`,
     headers: {
-      'Access-Control-Allow-Origin': url,
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/x-www-form-urlencoded'
     },
     method:'POST',
