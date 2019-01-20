@@ -45,7 +45,7 @@ CartItem.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleRemoveFromCart: () => dispatch(removeFromCart(ownProps.cartItem.id))
+  handleRemoveFromCart() { dispatch(removeFromCart(ownProps.cartItem.id)) }
 });
 
 export default connect(

@@ -1,14 +1,11 @@
 import React from 'react';
-import { createStore, applyMiddleware } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
-import reducers from '../reducers';
+import configureStore from '../config/configureStore';
 import Layout from "./layout";
-import { PIZZAS } from "../__mocks__";
 import '../styles/style.scss';
 
-const store = createStore(reducers,{pizzas:PIZZAS},composeWithDevTools(applyMiddleware()));
+const store = configureStore();
 
 const App = ({children, title}) => (
   <Provider store={store}>

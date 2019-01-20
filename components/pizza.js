@@ -37,7 +37,7 @@ Pizza.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleAddToCart: () => dispatch(addToCart(ownProps.pizza))
+  handleAddToCart() { dispatch(addToCart(ownProps.pizza)) }
 });
 
 export default connect(
