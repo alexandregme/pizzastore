@@ -29,7 +29,7 @@ const configureStore = () => {
 
   axios({
     url: `${url}`,
-    header:`Access-Control-Allow-Origin : ${url}`,
+    headers:{'Access-Control-Allow-Origin' : '*'},
     method: 'post',
     data: {
       query: FETCH_PIZZAS_QUERY
