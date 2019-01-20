@@ -1,6 +1,7 @@
 import { applyMiddleware, createStore } from "redux";
 import reducers from "../reducers";
 import axios from "axios";
+import qs from 'qs';
 import { composeWithDevTools } from "redux-devtools-extension";
 import { fetchPizzas } from '../actions';
 
@@ -27,15 +28,14 @@ const configureStore = () => {
 
   const url ='http://core-graphql.dev.waldo.photos';
 
-  axios.post({
+  axios({
     url: `${url}/pizza`,
     headers: {
       'Access-Control-Allow-Origin': url,
-      'Content-Type': 'application/json; charset=utf-8'
+      'Content-Type': 'application/x-www-form-urlencoded'
     },
-    data: {
-      query: FETCH_PIZZAS_QUERY
-    }
+    method:'POST',
+    data:qs.stringify({query: FETCH_PIZZAS_QUERY})
   }).then(({data})=>{
     store.dispatch(fetchPizzas(data.data.pizzaSizes));
   });
