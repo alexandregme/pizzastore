@@ -1,10 +1,40 @@
 import { applyMiddleware, createStore } from "redux";
 import reducers from "../reducers";
-import { PIZZAS } from "../__mocks__";
+import axios from "axios";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { fetchPizzas } from '../actions';
+
+const FETCH_PIZZAS_QUERY = `{
+  pizzaSizes{
+    name
+    maxToppings
+    basePrice
+    toppings{	
+      pizzaSize{
+        name
+      }
+      topping{
+        name
+        price
+      }
+      defaultSelected
+    }
+  }
+}`;
 
 const configureStore = () => {
-  const store = createStore(reducers,{pizzas:PIZZAS},composeWithDevTools(applyMiddleware()));
+  const store = createStore(reducers,{} ,composeWithDevTools(applyMiddleware()));
+
+  axios({
+    url: 'http://core-graphql.dev.waldo.photos/pizza',
+    method: 'post',
+    data: {
+      query: FETCH_PIZZAS_QUERY
+    }
+  }).then(({data})=>{
+    store.dispatch(fetchPizzas(data.data.pizzaSizes));
+  });
+
   return store;
 };
 
