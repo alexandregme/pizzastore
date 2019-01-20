@@ -14,8 +14,7 @@ export const removeFromCart = id => ({
   id
 });
 
-export const toggleTopping = (pizzaName, toppingName) => ({
+export const toggleTopping = (topping) => ({
   type: 'TOGGLE_TOPPING_FROM_PIZZA',
-  pizzaName,
-  toppingName
+  topping
 });

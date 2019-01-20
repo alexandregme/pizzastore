@@ -54,25 +54,25 @@ describe("Cart Custom component props", ()=>{
     mountedCartItem = shallow(<CartItem {...props} />);
   });
 
-  it('expect to have default value for pizza name', () => {
+  it('expect to have custom value for pizza name', () => {
     let pizzaNameValue = mountedCartItem.find('h5#pizzaName');
     expect(pizzaNameValue).toHaveLength(1);
     expect(pizzaNameValue.text()).toEqual('Pizza size - custom pizza');
   });
 
-  it('expect to have default value for pizza max toppings', () => {
+  it('expect to have custom value for pizza max toppings', () => {
     let pizzaMaxToppingValue = mountedCartItem.find('p#pizzaMaxToppings');
     expect(pizzaMaxToppingValue).toHaveLength(1);
     expect(pizzaMaxToppingValue.text()).toEqual("Max Toppings - 1");
   });
 
-  it('expect to have default value for base price', () => {
+  it('expect to have custom value for base price', () => {
     let pizzaBasePriceValue = mountedCartItem.find('p#pizzaBasePrice');
     expect(pizzaBasePriceValue).toHaveLength(1);
     expect(pizzaBasePriceValue.text()).toEqual("Base price - $1");
   });
 
-  it('expect to have default value for total price', () => {
+  it('expect to have custom value for total price', () => {
     let pizzaTotalPriceValue = mountedCartItem.find('p#pizzaTotalPrice');
     expect(pizzaTotalPriceValue).toHaveLength(1);
     expect(pizzaTotalPriceValue.text()).toEqual("Total price - $1");

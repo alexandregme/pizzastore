@@ -1,6 +1,6 @@
 import pizzas, { updateToppings, disabledToppings, updateTotalPrice, updatePizza} from '../../reducers/pizzas';
 import deepFreeze from 'deep-freeze';
-import { PIZZAS, CUSTOM_PIZZA } from '../../__mocks__';
+import { PIZZAS, CUSTOM_PIZZA, CUSTOM_TOPPING } from '../../__mocks__';
 
 describe('pizzas reducer', () => {
 
@@ -11,9 +11,7 @@ describe('pizzas reducer', () => {
 
   const actionToggleTopping = {
     type: 'TOGGLE_TOPPING_FROM_PIZZA',
-    pizzaName: 'small',
-    toppingName: 'topping 1'
-
+    topping: CUSTOM_TOPPING
   };
 
   let pizzasBefore;
@@ -37,19 +35,31 @@ describe('pizzas reducer', () => {
   it('should handle TOGGLE_TOPPING_FROM_PIZZA with deepFreeze mutation', () => {
     pizzasBefore = [CUSTOM_PIZZA];
     pizzasAfter = [{
-      "name": "custom pizza",
-      "maxToppings": 1,
-      "basePrice": 1,
-      "totalPrice": 1,
+      name: "custom pizza",
+      maxToppings: 1,
+      basePrice: 1,
+      totalPrice: 1.29,
+      disabledToppings: true,
       toppings:[{
-        name:"topping 1",
-        price:4,
-        isChecked:true
-      },{
-        name:"topping 2",
-        price:1,
-        isChecked:false
-      }]
+        pizzaSize: {
+          name: "custom pizza"
+        },
+        topping: {
+          name: "sausage",
+          price: 1.29
+        },
+        defaultSelected: false
+      },
+        {
+          pizzaSize: {
+            name: "custom pizza"
+          },
+          topping: {
+            name: "onion",
+            price: 0.29
+          },
+          defaultSelected: true
+        }]
     }];
 
     deepFreeze(pizzasBefore);
@@ -78,7 +88,7 @@ describe('pizzas function updateTotalPrice', () => {
 
   it('should return the right value for sum with deepFreeze mutation', () => {
     let customPizza = CUSTOM_PIZZA;
-    let totalPrice = 5;
+    let totalPrice = 1;
 
     deepFreeze(customPizza);
 

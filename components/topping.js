@@ -6,12 +6,12 @@ import Checkbox from "./checkbox";
 import { DEFAULT_TOPPING } from "../__mocks__";
 
 
-export const Topping = ({topping = DEFAULT_TOPPING, pizzaName='default pizza', disabledToppings=false, handleToggleTopping = ()=>{}}) => (
+export const Topping = ({topping = DEFAULT_TOPPING, disabledToppings=false, handleToggleTopping = ()=>{}}) => (
   <React.Fragment>
     <Checkbox
-      label={` ${topping.name} - $${topping.price}`}
-      isChecked={topping.isChecked}
-      isDisabled={topping.isChecked ? false : disabledToppings}
+      label={` ${topping.topping.name} - $${topping.topping.price}`}
+      isChecked={topping.defaultSelected}
+      isDisabled={topping.defaultSelected ? false : disabledToppings}
       handleChange={handleToggleTopping}
     />
   </React.Fragment>
@@ -20,13 +20,12 @@ export const Topping = ({topping = DEFAULT_TOPPING, pizzaName='default pizza', d
 
 Topping.propTypes = {
   topping: PropTypes.object,
-  pizzaName: PropTypes.string,
   disabledToppings: PropTypes.bool,
   handleToggleTopping: PropTypes.func
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleToggleTopping: () => dispatch(toggleTopping(ownProps.pizzaName, ownProps.topping.name))
+  handleToggleTopping() {dispatch(toggleTopping(ownProps.topping));}
 });
 
 export default connect(

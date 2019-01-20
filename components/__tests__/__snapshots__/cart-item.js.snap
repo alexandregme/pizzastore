@@ -60,7 +60,15 @@ ShallowWrapper {
           <div
             className="col-md-6 info"
           >
-            <ul />
+            <ul>
+              <li>
+                <h5
+                  className="card-title"
+                >
+                  Toppings
+                </h5>
+              </li>
+            </ul>
           </div>
         </div>
         <div
@@ -127,7 +135,15 @@ ShallowWrapper {
             <div
               className="col-md-6 info"
             >
-              <ul />
+              <ul>
+                <li>
+                  <h5
+                    className="card-title"
+                  >
+                    Toppings
+                  </h5>
+                </li>
+              </ul>
             </div>
           </div>,
           <div
@@ -212,7 +228,15 @@ ShallowWrapper {
               <div
                 className="col-md-6 info"
               >
-                <ul />
+                <ul>
+                  <li>
+                    <h5
+                      className="card-title"
+                    >
+                      Toppings
+                    </h5>
+                  </li>
+                </ul>
               </div>,
             ],
             "className": "card-body col-md-8",
@@ -316,7 +340,15 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <ul />,
+                "children": <ul>
+                  <li>
+                    <h5
+                      className="card-title"
+                    >
+                      Toppings
+                    </h5>
+                  </li>
+                </ul>,
                 "className": "col-md-6 info",
               },
               "ref": null,
@@ -325,10 +357,46 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [],
+                  "children": Array [
+                    <li>
+                      <h5
+                        className="card-title"
+                      >
+                        Toppings
+                      </h5>
+                    </li>,
+                    Array [],
+                  ],
                 },
                 "ref": null,
-                "rendered": Array [],
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <h5
+                        className="card-title"
+                      >
+                        Toppings
+                      </h5>,
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Toppings",
+                        "className": "card-title",
+                      },
+                      "ref": null,
+                      "rendered": "Toppings",
+                      "type": "h5",
+                    },
+                    "type": "li",
+                  },
+                ],
                 "type": "ul",
               },
               "type": "div",
@@ -447,7 +515,15 @@ ShallowWrapper {
             <div
               className="col-md-6 info"
             >
-              <ul />
+              <ul>
+                <li>
+                  <h5
+                    className="card-title"
+                  >
+                    Toppings
+                  </h5>
+                </li>
+              </ul>
             </div>
           </div>
           <div
@@ -514,7 +590,15 @@ ShallowWrapper {
               <div
                 className="col-md-6 info"
               >
-                <ul />
+                <ul>
+                  <li>
+                    <h5
+                      className="card-title"
+                    >
+                      Toppings
+                    </h5>
+                  </li>
+                </ul>
               </div>
             </div>,
             <div
@@ -599,7 +683,15 @@ ShallowWrapper {
                 <div
                   className="col-md-6 info"
                 >
-                  <ul />
+                  <ul>
+                    <li>
+                      <h5
+                        className="card-title"
+                      >
+                        Toppings
+                      </h5>
+                    </li>
+                  </ul>
                 </div>,
               ],
               "className": "card-body col-md-8",
@@ -703,7 +795,15 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <ul />,
+                  "children": <ul>
+                    <li>
+                      <h5
+                        className="card-title"
+                      >
+                        Toppings
+                      </h5>
+                    </li>
+                  </ul>,
                   "className": "col-md-6 info",
                 },
                 "ref": null,
@@ -712,10 +812,46 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [],
+                    "children": Array [
+                      <li>
+                        <h5
+                          className="card-title"
+                        >
+                          Toppings
+                        </h5>
+                      </li>,
+                      Array [],
+                    ],
                   },
                   "ref": null,
-                  "rendered": Array [],
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <h5
+                          className="card-title"
+                        >
+                          Toppings
+                        </h5>,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Toppings",
+                          "className": "card-title",
+                        },
+                        "ref": null,
+                        "rendered": "Toppings",
+                        "type": "h5",
+                      },
+                      "type": "li",
+                    },
+                  ],
                   "type": "ul",
                 },
                 "type": "div",

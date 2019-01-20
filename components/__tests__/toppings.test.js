@@ -33,8 +33,8 @@ describe("Toppings Custom component props", ()=>{
     mountedToppings = shallow(<Toppings {...props} />);
   });
 
-  it('expect to render 8 pizza sizes', () => {
+  it('expect to render 7 pizza sizes', () => {
     let toppings = mountedToppings.find(Topping);
-    expect(toppings.length).toEqual(8);
+    expect(toppings.length).toEqual(7);
   });
 });

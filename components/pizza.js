@@ -20,7 +20,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart = ()=>{}}) => (
           </div>
         </div>
         <div className="card-body">
-          <Toppings toppings={pizza.toppings} pizzaName={pizza.name} disabledToppings={pizza.disabledToppings}/>
+          <Toppings toppings={pizza.toppings} disabledToppings={pizza.disabledToppings}/>
           <Button
             label={'order pizza'}
             className="btn btn-warning text-gray-dark"
@@ -37,7 +37,7 @@ Pizza.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleAddToCart() { dispatch(addToCart(ownProps.pizza)) }
+  handleAddToCart() { dispatch(addToCart(ownProps.pizza)); }
 });
 
 export default connect(

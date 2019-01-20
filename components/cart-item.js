@@ -20,11 +20,14 @@ export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart}) =>(
 
         </div>
         <div className="col-md-6 info">
-          <ul>{
-            cartItem.toppings
-            .filter(topping => topping.isChecked)
-            .map((topping,id) => <li key={id}>{topping.name} - ${topping.price}</li>)
-          }</ul>
+          <ul>
+            <li><h5 className="card-title">Toppings</h5></li>
+            {
+              cartItem.toppings
+                .filter(topping => topping.defaultSelected)
+                .map((topping, id) => <li key={id}>{topping.topping.name} - ${topping.topping.price}</li>)
+            }
+          </ul>
         </div>
       </div>
       <div className="card-footer col-md-2">
@@ -45,7 +48,7 @@ CartItem.propTypes = {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  handleRemoveFromCart() { dispatch(removeFromCart(ownProps.cartItem.id)) }
+  handleRemoveFromCart() { dispatch(removeFromCart(ownProps.cartItem.id)); }
 });
 
 export default connect(

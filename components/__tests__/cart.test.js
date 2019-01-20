@@ -32,8 +32,8 @@ describe("Cart Custom component props", ()=>{
     mountedCart = shallow(<Cart {...props} />);
   });
 
-  it('expect to render 9 items in the cart', () => {
+  it('expect to render 3 items in the cart', () => {
     let cart = mountedCart.find(CartItem);
-    expect(cart.length).toEqual(9);
+    expect(cart.length).toEqual(3);
   });
 });

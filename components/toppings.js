@@ -7,7 +7,7 @@ const Toppings = ({toppings = [], pizzaName = 'default pizza', disabledToppings 
     <div>
       {
         toppings.length > 0 ?
-          toppings.map((topping,id) => <Topping key={id} topping={topping} pizzaName={pizzaName} disabledToppings={disabledToppings}/>) :
+          toppings.map((topping,id) => <Topping key={id} topping={topping} disabledToppings={disabledToppings}/>) :
           <p>There are no toppings available for this pizza.</p>
       }
     </div>

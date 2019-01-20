@@ -65,7 +65,6 @@ ShallowWrapper {
           className="card-body"
         >
           <Toppings
-            pizzaName="default pizza"
             toppings={Array []}
           />
           <Button
@@ -128,7 +127,6 @@ ShallowWrapper {
             className="card-body"
           >
             <Toppings
-              pizzaName="default pizza"
               toppings={Array []}
             />
             <Button
@@ -331,7 +329,6 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Toppings
-                pizzaName="default pizza"
                 toppings={Array []}
               />,
               <Button
@@ -350,7 +347,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "disabledToppings": undefined,
-                "pizzaName": "default pizza",
                 "toppings": Array [],
               },
               "ref": null,
@@ -432,7 +428,6 @@ ShallowWrapper {
             className="card-body"
           >
             <Toppings
-              pizzaName="default pizza"
               toppings={Array []}
             />
             <Button
@@ -495,7 +490,6 @@ ShallowWrapper {
               className="card-body"
             >
               <Toppings
-                pizzaName="default pizza"
                 toppings={Array []}
               />
               <Button
@@ -698,7 +692,6 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <Toppings
-                  pizzaName="default pizza"
                   toppings={Array []}
                 />,
                 <Button
@@ -717,7 +710,6 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "disabledToppings": undefined,
-                  "pizzaName": "default pizza",
                   "toppings": Array [],
                 },
                 "ref": null,

@@ -2,6 +2,7 @@ import React from 'react';
 import expect from 'expect';
 import { addToCart, removeFromCart, fetchPizzas, toggleTopping} from '../../actions';
 import { PIZZAS, CUSTOM_PIZZA} from '../../__mocks__';
+import deepFreeze from "deep-freeze";
 
 describe('Actions', () => {
   it('should create an action to fetch pizzas', () => {
@@ -10,6 +11,9 @@ describe('Actions', () => {
       type: 'FETCH_PIZZAS',
       pizzas: PIZZAS
     };
+
+    deepFreeze(pizzas);
+
     expect(fetchPizzas(pizzas)).toEqual(expectedAction);
   });
 
@@ -18,6 +22,9 @@ describe('Actions', () => {
       type: 'ADD_TO_CART',
       pizza: CUSTOM_PIZZA
     };
+
+    deepFreeze(CUSTOM_PIZZA);
+
     expect(addToCart(CUSTOM_PIZZA)).toEqual(expectedAction);
   });
 
@@ -27,17 +34,21 @@ describe('Actions', () => {
       type: 'REMOVE_FROM_CART',
       id
     };
+
+    deepFreeze(id);
+
     expect(removeFromCart(id)).toEqual(expectedAction);
   });
 
   it('should create an action to toggle topping from pizza', () => {
-    const toppingName = 'topping';
-    const pizzaName = 'small';
+    const topping = 'topping';
     const expectedAction = {
       type: 'TOGGLE_TOPPING_FROM_PIZZA',
-      toppingName,
-      pizzaName
+      topping,
     };
-    expect(toggleTopping(pizzaName,toppingName)).toEqual(expectedAction);
+
+    deepFreeze(topping);
+
+    expect(toggleTopping(topping)).toEqual(expectedAction);
   });
 });
