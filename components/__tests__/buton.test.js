@@ -3,12 +3,14 @@ import { shallow } from 'enzyme';
 import jest from 'jest-mock';
 import expect from 'expect';
 import Button from '../button';
+import Checkbox from "../checkbox";
 
 describe("Button", ()=>{
-  let mountedButton;
+  let mountedButton, button;
 
   beforeEach(()=>{
     mountedButton = shallow(<Button />);
+    button = mountedButton.find('button');
   });
 
   it('renders without crashing', () => {
@@ -17,9 +19,12 @@ describe("Button", ()=>{
   });
 
   it('expect to have button tag with default value', () => {
-    let button = mountedButton.find('button');
     expect(button).toHaveLength(1);
     expect(button.text()).toEqual('button');
+  });
+
+  it('expect the return undefined to function handleChange', () => {
+    expect(button.props().onClick()).toBe(undefined);
   });
 
   it('call a function passed to it when clicked', ()=>{
