@@ -3,7 +3,7 @@ import {shallow} from 'enzyme';
 import expect from 'expect';
 import Header from '../header';
 import SummaryCart from "../summary-cart";
--
+
 describe("Head", ()=>{
     let mountedHeader;
 

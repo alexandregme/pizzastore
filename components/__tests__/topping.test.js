@@ -4,6 +4,7 @@ import expect from 'expect';
 import { Topping } from '../topping';
 import Checkbox from "../checkbox";
 import { CUSTOM_TOPPING } from "../../__mocks__";
+import Button from "../button";
 
 describe("Topping", ()=>{
   let mountedTopping, checkbox;
@@ -21,8 +22,9 @@ describe("Topping", ()=>{
     expect(mountedTopping.find(Checkbox)).toHaveLength(1);
   });
 
-  it('expect the return of default function handleToggleTopping to be undefined', () => {
-    expect(mountedTopping.props().handleChange.call()).toBe(undefined);
+  it('expect the return undefined to function handleChange', () => {
+      let checkbox = mountedTopping.find(Checkbox);
+      expect(checkbox.props().handleChange()).toBe(undefined);
   });
 
   it('expect default to set props label', () => {
