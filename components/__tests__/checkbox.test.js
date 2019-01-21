@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import expect from 'expect';
 import Checkbox from '../checkbox';
 import jest from "jest-mock";
+import Button from "../button";
 
 describe("Checkbox", ()=>{
   let mountedCheckbox;
@@ -20,10 +21,16 @@ describe("Checkbox", ()=>{
     expect(input).toHaveLength(1);
   });
 
+
   it('expect to set the label default label', () => {
     let label = mountedCheckbox.find('label');
     expect(label).toHaveLength(1);
     expect(label.text()).toEqual('default label');
+  });
+
+  it('expect the return undefined to function handleClick', () => {
+    let input = mountedCheckbox.find('input[type="checkbox"]');
+    expect(input.props().onChange()).toBe(undefined);
   });
 
   it('call a function passed to it when change', ()=>{

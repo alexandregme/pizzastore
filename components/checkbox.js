@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 
 const Checkbox = ({label = 'default label', key , isChecked = false, isDisabled = false, handleChange = ()=>{} }) => (
-  <React.Fragment>
-    <div className="input-group-text">
-      <label
-        htmlFor={key}
-      >
+  <div className="input-group-text">
+    <label
+      htmlFor={key}
+    >
       <input
         type="checkbox"
         onChange={handleChange}
@@ -14,10 +13,9 @@ const Checkbox = ({label = 'default label', key , isChecked = false, isDisabled 
         checked={isChecked}
         disabled={isDisabled}
       />
-        {label}
+      {label}
     </label>
-    </div>
-  </React.Fragment>
+  </div>
 );
 
 Checkbox.propTypes = {
