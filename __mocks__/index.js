@@ -87,7 +87,7 @@ export const DEFAULT_TOPPING = {
   pizzaSize: {
     name: ''
   },
-  defaultSelected:false
+  defaultSelected: true
 };
 
 export const CUSTOM_TOPPING = {

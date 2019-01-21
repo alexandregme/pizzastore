@@ -17,29 +17,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <Checkbox
-        handleChange={[Function]}
-        isChecked={false}
-        isDisabled={false}
-        label=" default topping - $0"
-      />,
+      "handleChange": [Function],
+      "isChecked": true,
+      "isDisabled": false,
+      "label": "default topping - $0",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "handleChange": [Function],
-        "isChecked": false,
-        "isDisabled": false,
-        "label": " default topping - $0",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": Symbol(react.fragment),
+    "rendered": null,
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -47,29 +32,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <Checkbox
-          handleChange={[Function]}
-          isChecked={false}
-          isDisabled={false}
-          label=" default topping - $0"
-        />,
+        "handleChange": [Function],
+        "isChecked": true,
+        "isDisabled": false,
+        "label": "default topping - $0",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleChange": [Function],
-          "isChecked": false,
-          "isDisabled": false,
-          "label": " default topping - $0",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": Symbol(react.fragment),
+      "rendered": null,
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
