@@ -5,8 +5,6 @@ import { Pizza } from '../pizza';
 import Button from "../button";
 import Toppings from "../toppings";
 import { CUSTOM_PIZZA } from "../../__mocks__";
-import Checkbox from "../checkbox";
-import Topping from "../topping";
 
 describe("Pizza", ()=>{
   let mountedPizza;
@@ -51,7 +49,7 @@ describe("Pizza", ()=>{
     expect(mountedPizza.find(Button)).toHaveLength(1);
   });
 
-  it('expect the return undefined to function handleClick', () => {
+  it('expect the return to be undefined to default function handleClick', () => {
     let button = mountedPizza.find(Button);
     expect(button.props().handleClick()).toBe(undefined);
   });

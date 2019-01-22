@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import jest from 'jest-mock';
 import expect from 'expect';
 import Button from '../button';
-import Checkbox from "../checkbox";
 
 describe("Button", ()=>{
   let mountedButton, button;
@@ -23,7 +22,7 @@ describe("Button", ()=>{
     expect(button.text()).toEqual('button');
   });
 
-  it('expect the return undefined to function handleChange', () => {
+  it('expect the return to be undefined to default function handleChange', () => {
     expect(button.props().onClick()).toBe(undefined);
   });
 

@@ -4,10 +4,11 @@ import expect from 'expect';
 import { Topping } from '../topping';
 import Checkbox from "../checkbox";
 import { CUSTOM_TOPPING } from "../../__mocks__";
-import Button from "../button";
 
 describe("Topping", ()=>{
-  let mountedTopping, checkbox;
+  let mountedTopping;
+  let checkbox;
+
   beforeEach(()=>{
     mountedTopping = shallow(<Topping />);
     checkbox = mountedTopping.find(Checkbox);
@@ -22,8 +23,7 @@ describe("Topping", ()=>{
     expect(mountedTopping.find(Checkbox)).toHaveLength(1);
   });
 
-  it('expect the return undefined to function handleChange', () => {
-      let checkbox = mountedTopping.find(Checkbox);
+  it('expect the return to be undefined to default handleChange', () => {
       expect(checkbox.props().handleChange()).toBe(undefined);
   });
 
@@ -39,13 +39,14 @@ describe("Topping", ()=>{
     expect(checkbox.props().isDisabled).toEqual(false);
   });
 
-  it('expect default to set props handleChange', () => {
+  it('expect default handleChange to be a function', () => {
     expect(checkbox.props().handleChange).toBeInstanceOf(Function);
   });
 });
 
 describe("Topping Custom component props", ()=>{
   let mountedTopping;
+  let checkbox;
   let props = {
     topping: CUSTOM_TOPPING,
     disabledToppings:true
@@ -53,10 +54,10 @@ describe("Topping Custom component props", ()=>{
 
   beforeEach(()=>{
     mountedTopping = shallow(<Topping {...props} />);
+    checkbox = mountedTopping.find(Checkbox);
   });
 
   it('expect custom props isDisabled true', () => {
-    let checkbox = mountedTopping.find(Checkbox);
     expect(checkbox.props().isDisabled).toEqual(true);
   });
 });
