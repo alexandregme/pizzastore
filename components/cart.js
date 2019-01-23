@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import CartItem from "./cart-item";
 import SummaryCart from "./summary-cart";
 import Link from 'next/link';
+import { getCartItems } from "../selectors";
 
 export const Cart = ({cartItems = []}) => (
   <React.Fragment>
@@ -39,7 +40,7 @@ Cart.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  cartItems: state.cart.items
+  cartItems: getCartItems(state)
 });
 
 export default connect(

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Pizza from "./pizza";
-import {getPizzas} from "../selectors";
+import { getPizzas } from "../selectors";
 
 export const Pizzas = ({pizzas = []}) => (
   <React.Fragment>

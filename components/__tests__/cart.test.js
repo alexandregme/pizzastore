@@ -1,9 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import { Cart } from '../cart';
+import ConnectedCart, { Cart } from '../cart';
 import CartItem from '../cart-item';
-import { PIZZAS } from "../../__mocks__";
+import {PIZZAS, STORE} from "../../__mocks__";
+import {createStore} from "redux";
+import reducers from "../../reducers";
 
 describe("Cart", ()=>{
   let mountedCart;
@@ -35,5 +37,20 @@ describe("Cart Custom component props", ()=>{
   it('expect to render 3 items in the cart', () => {
     let cart = mountedCart.find(CartItem);
     expect(cart.length).toEqual(3);
+  });
+});
+
+describe('Connected Pizzas', () => {
+  let connectedCart;
+  let wrapper;
+
+  beforeEach(() => {
+    const store = createStore(reducers, STORE);
+    wrapper = shallow(<ConnectedCart store={store} />);
+    connectedCart = wrapper.find(Cart);
+  });
+
+  it('should have pizzas equals to mock consumed from store', () => {
+    expect(connectedCart.props().cartItems).toBe(PIZZAS);
   });
 });

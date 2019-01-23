@@ -375,6 +375,7 @@ export const PIZZAS = [{
 
 export const STORE = {
   cart: {
+    items: PIZZAS,
     totalItems: 0,
     totalCost: 0
   },
