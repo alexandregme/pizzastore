@@ -38,7 +38,7 @@ describe('pizzas reducer', () => {
       name: "custom pizza",
       maxToppings: 1,
       basePrice: 1,
-      totalPrice: 1.29,
+      totalPrice: 2.29,
       disabledToppings: true,
       toppings:[{
         pizzaSize: {
@@ -48,7 +48,7 @@ describe('pizzas reducer', () => {
           name: "sausage",
           price: 1.29
         },
-        defaultSelected: false
+        defaultSelected: true
       },
         {
           pizzaSize: {
@@ -58,7 +58,7 @@ describe('pizzas reducer', () => {
             name: "onion",
             price: 0.29
           },
-          defaultSelected: true
+          defaultSelected: false
         }]
     }];
 
@@ -88,7 +88,7 @@ describe('pizzas function updateTotalPrice', () => {
 
   it('should return the right value for sum with deepFreeze mutation', () => {
     let customPizza = CUSTOM_PIZZA;
-    let totalPrice = 1;
+    let totalPrice = 2.58;
 
     deepFreeze(customPizza);
 

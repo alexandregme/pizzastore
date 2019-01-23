@@ -123,7 +123,7 @@ export const CUSTOM_PIZZA = {
       name: "sausage",
       price: 1.29
     },
-    defaultSelected: false
+    defaultSelected: true
   },{
     pizzaSize: {
       name: "custom pizza"
@@ -132,7 +132,7 @@ export const CUSTOM_PIZZA = {
       name: "onion",
       price: 0.29
     },
-    defaultSelected: false
+    defaultSelected: true
   }]
 };
 

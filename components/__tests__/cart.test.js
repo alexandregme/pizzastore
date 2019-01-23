@@ -41,7 +41,7 @@ describe("Cart Custom component props", ()=>{
   });
 });
 
-describe('Connected Pizzas', () => {
+describe('Connected Cart', () => {
   let connectedCart;
   let wrapper;
 
@@ -51,7 +51,7 @@ describe('Connected Pizzas', () => {
     connectedCart = wrapper.find(Cart);
   });
 
-  it('should have pizzas equals to mock consumed from store', () => {
+  it('should have cartItems equals to mock consumed from store', () => {
     expect(connectedCart.props().cartItems).toBe(PIZZAS);
   });
 });
