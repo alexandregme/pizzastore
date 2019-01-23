@@ -23,9 +23,9 @@ export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart = ()=>{
           <ul>
             <li><h5 className="card-title">Toppings</h5></li>
             {
-              cartItem.toppings
-                .filter(topping => topping.defaultSelected)
-                .map((topping, id) => <li key={id}>{topping.topping.name} - ${topping.topping.price}</li>)
+              cartItem.toppings.map(
+                (topping, id) => <li key={id}>{topping.topping.name} - ${topping.topping.price}</li>
+              )
             }
           </ul>
         </div>

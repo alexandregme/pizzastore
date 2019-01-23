@@ -6,7 +6,9 @@ const addItemToCart = (state = [], action) => {
     ...state,
     {
       id: nextid++,
-      ...action.pizza
+      ...action.pizza,
+      toppings: action.pizza.toppings.filter(topping => topping.defaultSelected)
+
     }
   ];
 };
