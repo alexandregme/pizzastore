@@ -372,3 +372,10 @@ export const PIZZAS = [{
     ]
   }
 ];
+
+export const STORE = {
+  cart: {
+    totalItems: 0,
+    totalCost: 0
+  }
+};

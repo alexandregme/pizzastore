@@ -10,8 +10,8 @@
     "heroku-postbuild": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch --coverage --no-cache",
-    "lint": "eslint ./components ./pages ./actions ./reducers",
-    "lint:watch": "watch 'npm run lint' ./components ./pages ./actions ./reducers"
+    "lint": "eslint ./actions ./components ./config ./pages ./reducers ./selectors",
+    "lint:watch": "watch 'npm run lint' ./actions ./components ./config ./pages ./reducers ./selectors"
   },
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "qs": "^6.6.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-redux": "^6.0.0",
+    "react-redux": "^5.1.1",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7"
   },

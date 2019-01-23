@@ -18,8 +18,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <TotalItems />,
-        <TotalCost />,
+        <TotalItems
+          totalItems={0}
+        />,
+        <TotalCost
+          totalCost={0}
+        />,
       ],
       "className": "summary-cart ",
     },
@@ -30,7 +34,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "totalItems": undefined,
+          "totalItems": 0,
         },
         "ref": null,
         "rendered": null,
@@ -41,7 +45,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "totalCost": undefined,
+          "totalCost": 0,
         },
         "ref": null,
         "rendered": null,
@@ -57,8 +61,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <TotalItems />,
-          <TotalCost />,
+          <TotalItems
+            totalItems={0}
+          />,
+          <TotalCost
+            totalCost={0}
+          />,
         ],
         "className": "summary-cart ",
       },
@@ -69,7 +77,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "totalItems": undefined,
+            "totalItems": 0,
           },
           "ref": null,
           "rendered": null,
@@ -80,7 +88,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "totalCost": undefined,
+            "totalCost": 0,
           },
           "ref": null,
           "rendered": null,
