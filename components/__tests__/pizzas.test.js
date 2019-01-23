@@ -39,7 +39,6 @@ describe("Pizzas Custom component props", ()=>{
   });
 });
 
-
 describe('Connected Pizzas', () => {
   let connectedPizzas;
   let wrapper;

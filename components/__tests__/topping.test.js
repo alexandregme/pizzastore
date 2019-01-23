@@ -1,9 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import { Topping } from '../topping';
+import ConnectedTopping, { Topping } from '../topping';
 import Checkbox from "../checkbox";
-import { CUSTOM_TOPPING } from "../../__mocks__";
+import {CUSTOM_TOPPING, STORE, TOPPINGS} from "../../__mocks__";
+import {createStore} from "redux";
+import reducers from "../../reducers";
 
 describe("Topping", ()=>{
   let mountedTopping;
@@ -61,4 +63,24 @@ describe("Topping Custom component props", ()=>{
     expect(checkbox.props().isDisabled).toEqual(true);
   });
 });
+
+describe('Connected Topping', () => {
+  let connectedTopping;
+  let wrapper;
+  let props = {
+    topping: CUSTOM_TOPPING,
+    disabledToppings:true
+  };
+
+  beforeEach(() => {
+    const store = createStore(reducers, STORE);
+    wrapper = shallow(<ConnectedTopping {...props} store={store} />);
+    connectedTopping = wrapper.find(Topping);
+  });
+
+  it('when dispatching handleToggleTopping should return undefined', () => {
+    expect(connectedTopping.props().handleToggleTopping()).toBe(undefined);
+  });
+});
+
 
