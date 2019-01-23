@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
+import { STORE } from "../../__mocks__";
+import reducers from "../../reducers";
 import { createStore } from "redux";
 import ConnectedSummaryCart, { SummaryCart } from '../summary-cart';
 import TotalItems from "../total-items";
 import TotalCost from "../total-cost";
-import { STORE } from "../../__mocks__";
-import reducers from "../../reducers";
 
 describe("Summary Cart", ()=>{
   let mountedSummaryCart;

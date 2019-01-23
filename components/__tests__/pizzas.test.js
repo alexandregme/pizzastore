@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { createStore } from "redux";
+import reducers from "../../reducers";
 import expect from 'expect';
 import ConnectedPizzas, { Pizzas } from '../pizzas';
 import Pizza from '../pizza';
 import {PIZZAS, STORE} from "../../__mocks__";
-import {createStore} from "redux";
-import reducers from "../../reducers";
 
 describe("Pizzas", ()=>{
   let mountedPizzas;

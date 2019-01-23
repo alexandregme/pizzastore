@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import ConnectedTopping, { Topping } from '../topping';
-import Checkbox from "../checkbox";
-import {CUSTOM_TOPPING, STORE, TOPPINGS} from "../../__mocks__";
 import {createStore} from "redux";
 import reducers from "../../reducers";
+import ConnectedTopping, { Topping } from '../topping';
+import Checkbox from "../checkbox";
+import { CUSTOM_TOPPING, STORE } from "../../__mocks__";
+
 
 describe("Topping", ()=>{
   let mountedTopping;
