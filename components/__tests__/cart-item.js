@@ -1,15 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import { CartItem } from '../cart-item';
+import { createStore } from "redux";
+import reducers from "../../reducers";
+import ConnectedCartItem, { CartItem } from '../cart-item';
 import Button from "../button";
-import {CUSTOM_PIZZA} from "../../__mocks__";
+import { CUSTOM_PIZZA, STORE } from "../../__mocks__";
+
 
 describe("Cart Item", ()=>{
   let mountedCartItem;
+  let button;
 
   beforeEach(()=>{
     mountedCartItem = shallow(<CartItem />);
+    button = mountedCartItem.find(Button);
   });
 
   it('renders without crashing', () => {
@@ -42,11 +47,15 @@ describe("Cart Item", ()=>{
   });
 
   it('expect to have Button component', () => {
-    expect(mountedCartItem.find(Button)).toHaveLength(1);
+    expect(button).toHaveLength(1);
+  });
+
+  it('expect the return to be undefined to default function handleClick', () => {
+    expect(button.props().handleClick()).toBe(undefined);
   });
 });
 
-describe("Cart Custom component props", ()=>{
+describe("Cart Item Custom component props", ()=>{
   let mountedCartItem;
   let props = {cartItem: CUSTOM_PIZZA};
 
@@ -76,5 +85,22 @@ describe("Cart Custom component props", ()=>{
     let pizzaTotalPriceValue = mountedCartItem.find('p#pizzaTotalPrice');
     expect(pizzaTotalPriceValue).toHaveLength(1);
     expect(pizzaTotalPriceValue.text()).toEqual("Total price - $1");
+  });
+});
+
+describe('Connected CartItem', () => {
+  let connectedCartItem;
+  let wrapper;
+  let props =  {cartItem:{id:1}};
+
+  beforeEach(() => {
+    const store = createStore(reducers, STORE);
+    wrapper = shallow(<ConnectedCartItem {...props} store={store} />);
+    connectedCartItem = wrapper.find(CartItem);
+  });
+
+  it('when dispatching handleRemoveFromCart should return undefined', () => {
+    console.log(connectedCartItem.props());
+    expect(connectedCartItem.props().handleRemoveFromCart()).toBe(undefined);
   });
 });

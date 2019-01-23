@@ -83,6 +83,7 @@ ShallowWrapper {
           </p>
           <Button
             className="btn btn-danger"
+            handleClick={[Function]}
             label="remove pizza"
           />
         </div>
@@ -158,6 +159,7 @@ ShallowWrapper {
             </p>
             <Button
               className="btn btn-danger"
+              handleClick={[Function]}
               label="remove pizza"
             />
           </div>,
@@ -419,6 +421,7 @@ ShallowWrapper {
               </p>,
               <Button
                 className="btn btn-danger"
+                handleClick={[Function]}
                 label="remove pizza"
               />,
             ],
@@ -451,7 +454,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "className": "btn btn-danger",
-                "handleClick": undefined,
+                "handleClick": [Function],
                 "label": "remove pizza",
               },
               "ref": null,
@@ -538,6 +541,7 @@ ShallowWrapper {
             </p>
             <Button
               className="btn btn-danger"
+              handleClick={[Function]}
               label="remove pizza"
             />
           </div>
@@ -613,6 +617,7 @@ ShallowWrapper {
               </p>
               <Button
                 className="btn btn-danger"
+                handleClick={[Function]}
                 label="remove pizza"
               />
             </div>,
@@ -874,6 +879,7 @@ ShallowWrapper {
                 </p>,
                 <Button
                   className="btn btn-danger"
+                  handleClick={[Function]}
                   label="remove pizza"
                 />,
               ],
@@ -906,7 +912,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "className": "btn btn-danger",
-                  "handleClick": undefined,
+                  "handleClick": [Function],
                   "label": "remove pizza",
                 },
                 "ref": null,

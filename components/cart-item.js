@@ -6,7 +6,7 @@ import Button from "./button";
 import { DEFAULT_PIZZA } from "../__mocks__";
 import PizzaSVG from '../svgs/pizza.svg';
 
-export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart}) =>(
+export const CartItem = ({cartItem = DEFAULT_PIZZA, handleRemoveFromCart = ()=>{}}) =>(
   <React.Fragment>
     <div className="card bg-light text-center col-md-12">
       <div className="card-header col-md-2">
