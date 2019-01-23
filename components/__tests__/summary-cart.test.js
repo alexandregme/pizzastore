@@ -28,7 +28,6 @@ describe("Summary Cart", ()=>{
   });
 });
 
-
 describe('Connected SummaryCart', () => {
   let connectedSummaryCart;
   let wrapper;

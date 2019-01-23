@@ -1,9 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import { Pizzas } from '../pizzas';
+import ConnectedPizzas, { Pizzas } from '../pizzas';
 import Pizza from '../pizza';
-import { PIZZAS } from "../../__mocks__";
+import {PIZZAS, STORE} from "../../__mocks__";
+import {createStore} from "redux";
+import reducers from "../../reducers";
 
 describe("Pizzas", ()=>{
   let mountedPizzas;
@@ -34,5 +36,21 @@ describe("Pizzas Custom component props", ()=>{
   it('expect to render 3 pizza sizes', () => {
     let pizzas = mountedPizzas.find(Pizza);
     expect(pizzas.length).toEqual(3);
+  });
+});
+
+
+describe('Connected Pizzas', () => {
+  let connectedPizzas;
+  let wrapper;
+
+  beforeEach(() => {
+    const store = createStore(reducers, STORE);
+    wrapper = shallow(<ConnectedPizzas store={store} />);
+    connectedPizzas = wrapper.find(Pizzas);
+  });
+
+  it('should have pizzas equals to mock consumed from store', () => {
+    expect(connectedPizzas.props().pizzas).toBe(PIZZAS);
   });
 });
