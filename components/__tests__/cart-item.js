@@ -100,7 +100,6 @@ describe('Connected CartItem', () => {
   });
 
   it('when dispatching handleRemoveFromCart should return undefined', () => {
-    console.log(connectedCartItem.props());
     expect(connectedCartItem.props().handleRemoveFromCart()).toBe(undefined);
   });
 });

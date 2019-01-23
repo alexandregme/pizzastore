@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import { connect } from 'react-redux';
-import { addToCart } from '../actions';
+import {addToCart } from '../actions';
 import Button from "./button";
 import Toppings from "./toppings";
 import { DEFAULT_PIZZA } from "../__mocks__";
@@ -23,7 +23,7 @@ export const Pizza = ({pizza = DEFAULT_PIZZA, handleAddToCart = ()=>{}}) => (
         <Button
           label={'order pizza'}
           className="btn btn-warning text-gray-dark"
-          handleClick={handleAddToCart.bind(this, pizza)}
+          handleClick={handleAddToCart}
         />
       </div>
   </div>
@@ -34,7 +34,12 @@ Pizza.propTypes = {
   handleAddToCart: PropTypes.func
 };
 
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  handleAddToCart() { dispatch(addToCart(ownProps.pizza)); }
+});
+
+
 export default connect(
   null,
-  {handleAddToCart: addToCart}
+  mapDispatchToProps
 )(Pizza);

@@ -1,10 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import expect from 'expect';
-import { Pizza } from '../pizza';
+import ConnectedPizza, { Pizza } from '../pizza';
 import Button from "../button";
 import Toppings from "../toppings";
-import { CUSTOM_PIZZA } from "../../__mocks__";
+import {CUSTOM_PIZZA, STORE} from "../../__mocks__";
+import {createStore} from "redux";
+import reducers from "../../reducers";
 
 describe("Pizza", ()=>{
   let mountedPizza;
@@ -85,5 +87,22 @@ describe("Pizza Custom component props", ()=>{
     let pizzaTotalPriceValue = mountedPizza.find('p#pizzaTotalPrice');
     expect(pizzaTotalPriceValue).toHaveLength(1);
     expect(pizzaTotalPriceValue.text()).toEqual("Total price - $1");
+  });
+});
+
+
+describe('Connected Pizza', () => {
+  let connectedPizza;
+  let wrapper;
+  let props = {pizza:CUSTOM_PIZZA};
+
+  beforeEach(() => {
+    const store = createStore(reducers, STORE);
+    wrapper = shallow(<ConnectedPizza {...props} store={store} />);
+    connectedPizza = wrapper.find(Pizza);
+  });
+
+  it('when dispatching handleAddToCart should return undefined', () => {
+    expect(connectedPizza.props().handleAddToCart()).toBe(undefined);
   });
 });
